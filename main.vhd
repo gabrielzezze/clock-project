@@ -1,7 +1,7 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 
-ENTITY clock IS
+ENTITY main IS
 
     PORT (
         -- IN
@@ -18,7 +18,7 @@ ENTITY clock IS
 END ENTITY;
 
 
-ARCHITECTURE main OF clock IS
+ARCHITECTURE main OF main IS
 
 	BEGIN
 		 LEDR(5 DOWNTO 0) <= SW(5 DOWNTO 0);
