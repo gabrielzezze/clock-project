@@ -16,7 +16,7 @@ ENTITY unidade_controle IS
 		  flag_zero	: IN std_logic;
 		  
         -- OUT
-        palavraControle : OUT std_logic_vector(7 DOWNTO 0)
+        palavraControle : OUT std_logic_vector(8 DOWNTO 0)
     );
 	 
 END ENTITY;
@@ -24,14 +24,13 @@ END ENTITY;
 
 ARCHITECTURE main OF unidade_controle IS
 
-    ALIAS selMuxProxPC         : std_logic IS palavraControle(7);
-    ALIAS selMuxULAImed        : std_logic IS palavraControle(6);
-    ALIAS HabEscritaAcumulador : std_logic IS palavraControle(5);
-    ALIAS selOperacaoULA       : std_logic_vector(2 DOWNTO 0) IS palavraControle(4 DOWNTO 2);
-    ALIAS habLeituraMEM        : std_logic IS palavraControle(1);
-    ALIAS habEscritaMEM        : std_logic IS palavraControle(0);
-
-    SIGNAL instrucao         : std_logic_vector(4 DOWNTO 0);
+    ALIAS muxJump              : std_logic IS palavraControle(8);
+    ALIAS muxImedRam           : std_logic IS palavraControle(7);
+    ALIAS escritaReg           : std_logic IS palavraControle(6);
+    ALIAS operacao             : std_logic_vector(2 DOWNTO 0) IS palavraControle(5 DOWNTO 3);
+    ALIAS muxULAImedRam        : std_logic IS palavraControle(2);
+    ALIAS habEscritaRAM        : std_logic IS palavraControle(1);
+	 ALIAS habLeituraRAM        : std_logic IS palavraControle(0);
 	 
 	 -- Add
 	 CONSTANT op_code_add  		: std_logic_vector(4 DOWNTO 0) := "0001";
@@ -56,16 +55,18 @@ ARCHITECTURE main OF unidade_controle IS
 	 -- Jmp
 	 CONSTANT op_code_jmp  		: std_logic_vector(4 DOWNTO 0) := "1001";
 	
+	SIGNAL instrucao         : std_logic_vector(8 DOWNTO 0);
 	
 	-- Alias
     ALIAS add      	: std_logic IS instrucao(0);
     ALIAS sub      	: std_logic IS instrucao(1);
-    ALIAS mov_mr     : std_logic IS instrucao(2);
-    ALIAS mov_rm 		: std_logic IS instrucao(3);
-    ALIAS mov_rr 		: std_logic IS instrucao(4);
-	 ALIAS cmp 			: std_logic IS instrucao(5);
-	 ALIAS je 			: std_logic IS instrucao(6);
-	 ALIAS jmp 			: std_logic IS instrucao(7);
+	 ALIAS lea      	: std_logic IS instrucao(2);
+    ALIAS mov_mr     : std_logic IS instrucao(3);
+    ALIAS mov_rm 		: std_logic IS instrucao(4);
+    ALIAS mov_rr 		: std_logic IS instrucao(5);
+	 ALIAS cmp 			: std_logic IS instrucao(6);
+	 ALIAS je 			: std_logic IS instrucao(7);
+	 ALIAS jmp 			: std_logic IS instrucao(8);
 	 
 BEGIN
 
@@ -81,24 +82,18 @@ BEGIN
 												"000000000" WHEN OTHERS;
 
 		  
-    selMuxProxPC <= jump OR (flag_zero AND je);
-	 
-    selMuxULAImed <= load OR addAccMem OR subAccMem;
-	 
-    HabEscritaAcumulador <= load OR addAccMem OR subAccMem;
+    selMuxProxPC  <= jump OR (flag_zero AND je);
+    muxImedRam    <= mov_mr;
+    escritaReg    <= add OR sub OR lea OR mov_mr or mov_rr;
+    muxULAImedRam <= lea OR mov_mr;
+    habEscritaRAM <= mov_rm;
+	 habLeituraRAM <= mov_mr;
 
 	 
     WITH opCode SELECT
-        selOperacaoULA <= "000" WHEN opCodeJump,
-        "011" WHEN opCodeLoad,
-        "010" WHEN opCodeStore,
-        "000" WHEN opCodeAddAccMem,
-        "001" WHEN opCodeSubAccMem,
+        operacao <= "000" WHEN add,
+        "001" WHEN (sub OR cmp),
+        "010" WHEN mov_rr,
         "000" WHEN OTHERS;
-		  
-
-    habLeituraMEM <= load OR addAccMem OR subAccMem;
-
-    habEscritaMEM <= store;
 	 
 END ARCHITECTURE;
