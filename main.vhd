@@ -2,7 +2,11 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 
 ENTITY main IS
-
+    GENERIC (
+        DATA_WIDTH : NATURAL := 8;
+        ADDR_WIDTH : NATURAL := 9;
+        TOTAL_WIDTH: NATURAL := 22
+    );
     PORT (
         -- IN
         CLOCK_50     : IN std_logic;
@@ -20,8 +24,14 @@ END ENTITY;
 
 ARCHITECTURE main OF main IS
 
-	BEGIN
-		 LEDR(5 DOWNTO 0) <= SW(5 DOWNTO 0);
-		 LEDR(9 DOWNTO 6) <= NOT KEY(3 DOWNTO 0);
+BEGIN
+    processador : ENTITY work.processador
+        GENERIC MAP(
+            DATA_WIDTH => DATA_WIDTH,
+            ADDR_WIDTH => ADDR_WIDTH
+        )
+        PORT MAP(
+            clk => CLOCK_50
+        ); 
 		 
 END ARCHITECTURE;

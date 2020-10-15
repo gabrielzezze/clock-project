@@ -1,5 +1,5 @@
 Analysis & Synthesis report for main
-Tue Oct  6 14:28:30 2020
+Thu Oct 15 18:36:29 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -14,9 +14,24 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |main
+ 10. Parameter Settings for User Entity Instance: processador:processador
+ 11. Parameter Settings for User Entity Instance: processador:processador|unidade_controle:UC
+ 12. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD
+ 13. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|registrador_generico:PC
+ 14. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|mux_generico_2x1:MuxProxPC
+ 15. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|soma_constante:somaUm
+ 16. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|memoria_rom:ROM
+ 17. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_RAM_imediato
+ 18. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores
+ 19. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|ULA:ula
+ 20. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_ULA_imediato_ou_ram
+ 21. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|registrador_generico:PC"
+ 22. Port Connectivity Checks: "processador:processador|fluxo_dados:FD"
+ 23. Port Connectivity Checks: "processador:processador"
+ 24. Post-Synthesis Netlist Statistics for Top Partition
+ 25. Elapsed Time Per Partition
+ 26. Analysis & Synthesis Messages
 
 
 
@@ -43,7 +58,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Oct  6 14:28:29 2020       ;
+; Analysis & Synthesis Status     ; Successful - Thu Oct 15 18:36:29 2020       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; main                                        ;
 ; Top-level Entity Name           ; main                                        ;
@@ -166,13 +181,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                             ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                      ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------+---------+
-; main.vhd                         ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/main.vhd ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                      ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
+; ula.vhd                          ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/ula.vhd                  ;         ;
+; banco_registradores.vhd          ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/banco_registradores.vhd  ;         ;
+; mux_generico_2x1.vhd             ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/mux_generico_2x1.vhd     ;         ;
+; soma_constante.vhd               ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/soma_constante.vhd       ;         ;
+; registrador_generico.vhd         ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/registrador_generico.vhd ;         ;
+; memoria_rom.vhd                  ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/memoria_rom.vhd          ;         ;
+; fluxo_dados.vhd                  ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd          ;         ;
+; main.vhd                         ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/main.vhd                 ;         ;
+; unidade_controle.vhd             ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/unidade_controle.vhd     ;         ;
+; processador.vhd                  ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/processador.vhd          ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------+
@@ -197,8 +221,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;          ;
 ; Maximum fan-out node                        ; CLOCK_50 ;
 ; Maximum fan-out                             ; 1        ;
-; Total fan-out                               ; 78       ;
-; Average fan-out                             ; 0.57     ;
+; Total fan-out                               ; 68       ;
+; Average fan-out                             ; 0.50     ;
 +---------------------------------------------+----------+
 
 
@@ -227,19 +251,181 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |main ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                              ;
+; ADDR_WIDTH     ; 9     ; Signed Integer                              ;
+; TOTAL_WIDTH    ; 22    ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; data_width     ; 8     ; Signed Integer                              ;
+; addr_width     ; 9     ; Signed Integer                              ;
+; total_width    ; 22    ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|unidade_controle:UC ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                                  ;
+; addr_width     ; 9     ; Signed Integer                                                  ;
+; total_width    ; 22    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                             ;
+; rom_data_width ; 9     ; Signed Integer                                             ;
+; addr_width     ; 9     ; Signed Integer                                             ;
+; total_width    ; 22    ; Signed Integer                                             ;
+; reg_width      ; 3     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|registrador_generico:PC ;
++----------------+-------+------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------+
+; larguradados   ; 9     ; Signed Integer                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|mux_generico_2x1:MuxProxPC ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; larguradados   ; 9     ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|soma_constante:somaUm ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 9     ; Signed Integer                                                                   ;
+; constante      ; 1     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|memoria_rom:ROM ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; datawidth      ; 22    ; Signed Integer                                                             ;
+; addrwidth      ; 9     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_RAM_imediato ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores ;
++---------------------+-------+-----------------------------------------------------------------------------------------------+
+; Parameter Name      ; Value ; Type                                                                                          ;
++---------------------+-------+-----------------------------------------------------------------------------------------------+
+; larguradados        ; 8     ; Signed Integer                                                                                ;
+; larguraendbancoregs ; 3     ; Signed Integer                                                                                ;
++---------------------+-------+-----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|ULA:ula ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_ULA_imediato_ou_ram ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "processador:processador|fluxo_dados:FD|registrador_generico:PC" ;
++--------+-------+----------+----------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                        ;
++--------+-------+----------+----------------------------------------------------------------+
+; enable ; Input ; Info     ; Stuck at VCC                                                   ;
+; rst    ; Input ; Info     ; Stuck at GND                                                   ;
++--------+-------+----------+----------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "processador:processador|fluxo_dados:FD"                                                        ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                             ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; saidaacumulador ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; programcounter  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "processador:processador"                                                                       ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                             ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; saidaacumulador ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; programcounter  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 5                           ;
-;     normal            ; 5                           ;
+; arriav_lcell_comb     ; 1                           ;
+;     normal            ; 1                           ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 4                           ;
 ; boundary_port         ; 68                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.53                        ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -258,79 +444,141 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Oct  6 14:28:22 2020
+    Info: Processing started: Thu Oct 15 18:36:22 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto_clock -c main
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
+    Info (12022): Found design unit 1: ULA-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/ula.vhd Line: 17
+    Info (12023): Found entity 1: ULA File: /home/gabrielzezze/Desktop/projeto_clock/ula.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file banco_registradores.vhd
+    Info (12022): Found design unit 1: banco_registradores-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/banco_registradores.vhd Line: 28
+    Info (12023): Found entity 1: banco_registradores File: /home/gabrielzezze/Desktop/projeto_clock/banco_registradores.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file mux_generico_2x1.vhd
+    Info (12022): Found design unit 1: mux_generico_2x1-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/mux_generico_2x1.vhd Line: 15
+    Info (12023): Found entity 1: mux_generico_2x1 File: /home/gabrielzezze/Desktop/projeto_clock/mux_generico_2x1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file soma_constante.vhd
+    Info (12022): Found design unit 1: soma_constante-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/soma_constante.vhd Line: 18
+    Info (12023): Found entity 1: soma_constante File: /home/gabrielzezze/Desktop/projeto_clock/soma_constante.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file registrador_generico.vhd
+    Info (12022): Found design unit 1: registrador_generico-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/registrador_generico.vhd Line: 18
+    Info (12023): Found entity 1: registrador_generico File: /home/gabrielzezze/Desktop/projeto_clock/registrador_generico.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file memoria_rom.vhd
+    Info (12022): Found design unit 1: memoria_rom-assincrona File: /home/gabrielzezze/Desktop/projeto_clock/memoria_rom.vhd Line: 18
+    Info (12023): Found entity 1: memoria_rom File: /home/gabrielzezze/Desktop/projeto_clock/memoria_rom.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file fluxo_dados.vhd
+    Info (12022): Found design unit 1: fluxo_dados-main File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 28
+    Info (12023): Found entity 1: fluxo_dados File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file main.vhd
-    Info (12022): Found design unit 1: main-main File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 21
+    Info (12022): Found design unit 1: main-main File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 25
     Info (12023): Found entity 1: main File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file unidade_controle.vhd
+    Info (12022): Found design unit 1: unidade_controle-main File: /home/gabrielzezze/Desktop/projeto_clock/unidade_controle.vhd Line: 26
+    Info (12023): Found entity 1: unidade_controle File: /home/gabrielzezze/Desktop/projeto_clock/unidade_controle.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file processador.vhd
+    Info (12022): Found design unit 1: processador-main File: /home/gabrielzezze/Desktop/projeto_clock/processador.vhd Line: 24
+    Info (12023): Found entity 1: processador File: /home/gabrielzezze/Desktop/projeto_clock/processador.vhd Line: 5
 Info (12127): Elaborating entity "main" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at main.vhd(15): used implicit default value for signal "HEX0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-Warning (10541): VHDL Signal Declaration warning at main.vhd(15): used implicit default value for signal "HEX1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-Warning (10541): VHDL Signal Declaration warning at main.vhd(15): used implicit default value for signal "HEX2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-Warning (10541): VHDL Signal Declaration warning at main.vhd(15): used implicit default value for signal "HEX3" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-Warning (10541): VHDL Signal Declaration warning at main.vhd(15): used implicit default value for signal "HEX4" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-Warning (10541): VHDL Signal Declaration warning at main.vhd(15): used implicit default value for signal "HEX5" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
+Warning (10541): VHDL Signal Declaration warning at main.vhd(18): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 18
+Warning (10541): VHDL Signal Declaration warning at main.vhd(19): used implicit default value for signal "HEX0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+Warning (10541): VHDL Signal Declaration warning at main.vhd(19): used implicit default value for signal "HEX1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+Warning (10541): VHDL Signal Declaration warning at main.vhd(19): used implicit default value for signal "HEX2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+Warning (10541): VHDL Signal Declaration warning at main.vhd(19): used implicit default value for signal "HEX3" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+Warning (10541): VHDL Signal Declaration warning at main.vhd(19): used implicit default value for signal "HEX4" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+Warning (10541): VHDL Signal Declaration warning at main.vhd(19): used implicit default value for signal "HEX5" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+Info (12128): Elaborating entity "processador" for hierarchy "processador:processador" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 28
+Warning (10541): VHDL Signal Declaration warning at processador.vhd(18): used implicit default value for signal "saidaAcumulador" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/processador.vhd Line: 18
+Warning (10541): VHDL Signal Declaration warning at processador.vhd(19): used implicit default value for signal "programCounter" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/processador.vhd Line: 19
+Info (12128): Elaborating entity "unidade_controle" for hierarchy "processador:processador|unidade_controle:UC" File: /home/gabrielzezze/Desktop/projeto_clock/processador.vhd Line: 34
+Info (12128): Elaborating entity "fluxo_dados" for hierarchy "processador:processador|fluxo_dados:FD" File: /home/gabrielzezze/Desktop/projeto_clock/processador.vhd Line: 46
+Warning (10541): VHDL Signal Declaration warning at fluxo_dados.vhd(21): used implicit default value for signal "saidaAcumulador" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 21
+Warning (10541): VHDL Signal Declaration warning at fluxo_dados.vhd(45): used implicit default value for signal "barramentoEntradaDados" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 45
+Info (12128): Elaborating entity "registrador_generico" for hierarchy "processador:processador|fluxo_dados:FD|registrador_generico:PC" File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 65
+Info (12128): Elaborating entity "mux_generico_2x1" for hierarchy "processador:processador|fluxo_dados:FD|mux_generico_2x1:MuxProxPC" File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 77
+Info (12128): Elaborating entity "soma_constante" for hierarchy "processador:processador|fluxo_dados:FD|soma_constante:somaUm" File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 88
+Info (12128): Elaborating entity "memoria_rom" for hierarchy "processador:processador|fluxo_dados:FD|memoria_rom:ROM" File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 98
+Info (12128): Elaborating entity "mux_generico_2x1" for hierarchy "processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_RAM_imediato" File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 108
+Info (12128): Elaborating entity "banco_registradores" for hierarchy "processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores" File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 119
+Info (12128): Elaborating entity "ULA" for hierarchy "processador:processador|fluxo_dados:FD|ULA:ula" File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 136
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[0]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX0[2]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX0[3]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX0[4]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX0[5]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX0[6]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX1[0]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX1[3]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX1[4]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX1[5]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX1[6]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX2[0]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX2[1]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX2[2]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX2[3]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX2[4]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX2[5]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX2[6]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX3[0]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX3[1]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX3[2]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX3[3]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX3[4]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX3[5]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX3[6]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX4[0]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX4[1]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX4[2]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX4[3]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX4[4]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX4[5]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX4[6]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX5[0]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX5[1]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX5[2]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX5[3]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX5[4]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX5[5]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-    Warning (13410): Pin "HEX5[6]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
+    Warning (13410): Pin "LEDR[0]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 18
+    Warning (13410): Pin "HEX0[0]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX0[1]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX0[2]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX0[3]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX0[4]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX0[5]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX0[6]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX1[0]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX1[3]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX1[4]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX1[5]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX1[6]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX2[0]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX2[3]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX2[4]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX2[5]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX2[6]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX3[0]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX3[1]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX3[2]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX3[3]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX3[4]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX3[5]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX3[6]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX4[1]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX4[3]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX4[4]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX4[6]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX5[0]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX5[2]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX5[3]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX5[4]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
+    Warning (13410): Pin "HEX5[6]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 19
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 6 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLOCK_50" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 8
-    Warning (15610): No output dependent on input pin "SW[6]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 9
-    Warning (15610): No output dependent on input pin "SW[7]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 9
-    Warning (15610): No output dependent on input pin "SW[8]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 9
-    Warning (15610): No output dependent on input pin "SW[9]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 9
-    Warning (15610): No output dependent on input pin "FPGA_RESET_N" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 11
+Warning (21074): Design contains 16 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "CLOCK_50" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 12
+    Warning (15610): No output dependent on input pin "SW[0]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 13
+    Warning (15610): No output dependent on input pin "SW[1]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 13
+    Warning (15610): No output dependent on input pin "SW[2]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 13
+    Warning (15610): No output dependent on input pin "SW[3]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 13
+    Warning (15610): No output dependent on input pin "SW[4]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 13
+    Warning (15610): No output dependent on input pin "SW[5]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 13
+    Warning (15610): No output dependent on input pin "SW[6]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 13
+    Warning (15610): No output dependent on input pin "SW[7]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 13
+    Warning (15610): No output dependent on input pin "SW[8]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 13
+    Warning (15610): No output dependent on input pin "SW[9]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 13
+    Warning (15610): No output dependent on input pin "KEY[0]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 14
+    Warning (15610): No output dependent on input pin "KEY[1]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 14
+    Warning (15610): No output dependent on input pin "KEY[2]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 14
+    Warning (15610): No output dependent on input pin "KEY[3]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 14
+    Warning (15610): No output dependent on input pin "FPGA_RESET_N" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
 Info (21057): Implemented 68 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 52 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 57 warnings
-    Info: Peak virtual memory: 514 megabytes
-    Info: Processing ended: Tue Oct  6 14:28:30 2020
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:16
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 82 warnings
+    Info: Peak virtual memory: 516 megabytes
+    Info: Processing ended: Thu Oct 15 18:36:29 2020
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:14
 
 
