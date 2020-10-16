@@ -247,6 +247,15 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 
+set_global_assignment -name VHDL_FILE flip_flop_generico.vhd
+set_global_assignment -name VHDL_FILE divisor_generico_interface.vhd
+set_global_assignment -name VHDL_FILE divisor_generico.vhd
+set_global_assignment -name VHDL_FILE interface_hex.vhd
+set_global_assignment -name VHDL_FILE conversor_hex_7_segmentos.vhd
+set_global_assignment -name VHDL_FILE interface_buttons.vhd
+set_global_assignment -name VHDL_FILE interface_switches.vhd
+set_global_assignment -name VHDL_FILE memoria_ram.vhd
+set_global_assignment -name VHDL_FILE decodificador_enderecos.vhd
 set_global_assignment -name VHDL_FILE ula.vhd
 set_global_assignment -name VHDL_FILE banco_registradores.vhd
 set_global_assignment -name VHDL_FILE mux_generico_2x1.vhd

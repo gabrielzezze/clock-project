@@ -31,7 +31,15 @@ BEGIN
             ADDR_WIDTH => ADDR_WIDTH
         )
         PORT MAP(
-            clk => CLOCK_50
+            clk => CLOCK_50,
+            SW => SW,
+            KEY => KEY,
+            HEX0 => HEX0,
+            HEX1 => HEX1,
+            HEX2 => HEX2,
+            HEX3 => HEX3,
+            HEX4 => HEX4,
+            HEX5 => HEX5
         ); 
 		 
 END ARCHITECTURE;

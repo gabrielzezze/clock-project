@@ -13,10 +13,13 @@ ENTITY processador IS
     PORT (
         -- IN
         clk : IN std_logic;
+        SW  : IN std_logic_vector(9 DOWNTO 0);
+        KEY          : IN std_logic_vector(3 DOWNTO 0);
 		  
         -- OUT
         saidaAcumulador : OUT std_logic_vector(DATA_WIDTH - 1 DOWNTO 0);
-        programCounter  : OUT std_logic_vector(ADDR_WIDTH - 1 DOWNTO 0)
+        programCounter  : OUT std_logic_vector(ADDR_WIDTH - 1 DOWNTO 0);
+        HEX0, HEX1, HEX2, HEX3, HEX4, HEX5 : OUT std_logic_vector(6 DOWNTO 0)
     );
 	 
 END ENTITY;
@@ -54,7 +57,15 @@ BEGIN
                 clk => clk,
                 palavraControle => palavraControle,
                 flag_zero   => flag_zero,
-                opCode => opCode
+                opCode => opCode,
+                sw => SW,
+                KEY => KEY,
+                HEX0 => HEX0,
+                HEX1 => HEX1,
+                HEX2 => HEX2,
+                HEX3 => HEX3,
+                HEX4 => HEX4,
+                HEX5 => HEX5
             );
 		  
 END ARCHITECTURE;
