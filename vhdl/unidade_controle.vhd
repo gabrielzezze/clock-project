@@ -14,10 +14,10 @@ ENTITY unidade_controle IS
         -- IN
         clk    	: IN std_logic;
         opCode 	: IN std_logic_vector(3 DOWNTO 0);
-		flag_zero	: IN std_logic;
+		flag_zero_out	: IN std_logic;
 		  
         -- OUT
-        palavraControle : OUT std_logic_vector(8 DOWNTO 0)
+        palavraControle : OUT std_logic_vector(9 DOWNTO 0)
     );
 	 
 END ENTITY;
@@ -25,6 +25,7 @@ END ENTITY;
 
 ARCHITECTURE main OF unidade_controle IS
 
+	ALIAS habFlag0             : std_logic IS palavraControle(9);
     ALIAS muxJump              : std_logic IS palavraControle(8);
     ALIAS muxImedRam           : std_logic IS palavraControle(7);
     ALIAS escritaReg           : std_logic IS palavraControle(6);
@@ -51,10 +52,10 @@ ARCHITECTURE main OF unidade_controle IS
 	CONSTANT op_code_cmp  		: std_logic_vector(3 DOWNTO 0) := "0111";
 	 
 	-- Je
-	CONSTANT op_code_je  		: std_logic_vector(3 DOWNTO 0) := "1000";
+	CONSTANT op_code_jmp  		: std_logic_vector(3 DOWNTO 0) := "1000";
 	 
     -- Jmp
-	CONSTANT op_code_jmp  		: std_logic_vector(3 DOWNTO 0) := "1001";
+	CONSTANT op_code_je  		: std_logic_vector(3 DOWNTO 0) := "1001";
 	
 	SIGNAL instrucao         : std_logic_vector(8 DOWNTO 0);
 	
@@ -66,8 +67,8 @@ ARCHITECTURE main OF unidade_controle IS
     ALIAS mov_rm 		: std_logic IS instrucao(4);
     ALIAS mov_rr 		: std_logic IS instrucao(5);
 	ALIAS cmp 			: std_logic IS instrucao(6);
-	ALIAS je 			: std_logic IS instrucao(7);
-	ALIAS jmp 			: std_logic IS instrucao(8);
+	ALIAS jmp 			: std_logic IS instrucao(7);
+	ALIAS je 			: std_logic IS instrucao(8);
 	 
 BEGIN
 
@@ -78,16 +79,17 @@ BEGIN
 												"000010000" WHEN op_code_mov_rm,
 												"000100000" WHEN op_code_mov_rr,
 												"001000000" WHEN op_code_cmp,
-												"010000000" WHEN op_code_je,
-												"100000000" WHEN op_code_jmp,
+												"010000000" WHEN op_code_jmp,
+												"100000000" WHEN op_code_je,
 												"000000000" WHEN OTHERS;
-		  
-	muxJump  <= jmp OR (flag_zero AND je);
+
+	muxJump  <=  jmp OR (je AND flag_zero_out);
     muxImedRam    <= mov_mr;
     escritaReg    <= add OR sub OR lea OR mov_mr or mov_rr;
     muxULAImedRam <= lea OR mov_mr;
     habEscritaRAM <= mov_rm;
 	habLeituraRAM <= mov_mr;
+	habFlag0 <= '1' WHEN op_code_cmp = opCode ELSE '0';
 
 	 
     WITH opCode SELECT

@@ -8,7 +8,8 @@ ENTITY decodificador_enderecos IS
     );
     PORT (
         seletor  : IN std_logic_vector(ADDR_WIDTH - 1 DOWNTO 0);
-        habilita : OUT std_logic_vector(5 DOWNTO 0)
+        habilita : OUT std_logic_vector(5 DOWNTO 0);
+        opcode   : IN std_logic_vector(3 DOWNTO 0)
     );
 END ENTITY;
 
@@ -19,11 +20,12 @@ ARCHITECTURE comportamento OF decodificador_enderecos IS
 BEGIN
     num_endereco(ADDR_WIDTH - 1 DOWNTO 0) <= unsigned(seletor);
 
+
     -- RAM
     habilita(0) <= '1' WHEN num_endereco >= 64 AND num_endereco < 128 ELSE '0';
 
     -- Hex
-    habilita(1) <= '1' WHEN num_endereco >= 5 AND num_endereco <= 7 ELSE '0';
+    habilita(1) <= '1' WHEN (num_endereco >= 5 AND num_endereco <= 7 AND opcode = "0101") ELSE '0';
 
     -- Ler Temp 
     habilita(2) <= '1' WHEN num_endereco = 8 ELSE'0';

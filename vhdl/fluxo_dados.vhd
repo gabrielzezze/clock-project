@@ -14,15 +14,15 @@ ENTITY fluxo_dados IS
     PORT (
         -- IN
         clk             : IN std_logic;
-        palavraControle : IN std_logic_vector(8 DOWNTO 0);
+        palavraControle : IN std_logic_vector(9 DOWNTO 0);
         SW              : IN std_logic_vector(9 DOWNTO 0);
         KEY             : IN std_logic_vector(3 DOWNTO 0);
+        flag_zero_out   : OUT std_logic;
 
         -- OUT
         opCode          : OUT std_logic_vector(3 DOWNTO 0);
         saidaAcumulador : OUT std_logic_vector(DATA_WIDTH - 1 DOWNTO 0);
         programCounter  : OUT std_logic_vector(ADDR_WIDTH - 1 DOWNTO 0);
-        flag_zero       : OUT std_logic;
         HEX0, HEX1, HEX2, HEX3, HEX4, HEX5 : OUT std_logic_vector(6 DOWNTO 0)
     );
 
@@ -41,6 +41,7 @@ ARCHITECTURE main OF fluxo_dados IS
     SIGNAL saidaMuxImedRam            : std_logic_vector(DATA_WIDTH - 1 DOWNTO 0);
     SIGNAL saidaMuxULAImed_ou_RAM     : std_logic_vector(DATA_WIDTH - 1 DOWNTO 0);
     SIGNAL saidaRegA, saidaRegB       : std_logic_vector(DATA_WIDTH - 1 DOWNTO 0);
+    SIGNAL flag_zero_in               : std_logic;
     
     -- Barramentos
     SIGNAL barramentoEntradaDados     : std_logic_vector(DATA_WIDTH - 1 DOWNTO 0);
@@ -51,6 +52,7 @@ ARCHITECTURE main OF fluxo_dados IS
     ALIAS enderecoJUMP                : std_logic_vector(ADDR_WIDTH - 1 DOWNTO 0) IS Instrucao(ADDR_WIDTH - 1 DOWNTO 0);
     ALIAS imediato_entradaExtSinal    : std_logic_vector(ADDR_WIDTH - 1 DOWNTO 0) IS Instrucao(ADDR_WIDTH - 1 DOWNTO 0);
 
+    ALIAS habilitaFlagZero            : std_logic IS palavraControle(9);
     ALIAS muxJump                     : std_logic IS palavraControle(8);
     ALIAS muxImedRam                  : std_logic IS palavraControle(7);
     ALIAS escritaReg                  : std_logic IS palavraControle(6);
@@ -150,7 +152,16 @@ BEGIN
             entradaB => saidaRegB,
             saida    => saidaULA,
             seletor  => operacao,
-            flagZero => flag_zero
+            flagZero => flag_zero_in
+        );
+
+    flip_flop_flag_zero : ENTITY work.flip_flop_generico
+        PORT MAP (
+            DIN    => flag_zero_in,
+            ENABLE => habilitaFlagZero,
+            RST    => '0',
+            CLK    => clk,
+            DOUT   => flag_zero_out
         );
 
     mux_ULA_imediato_ou_ram : ENTITY work.mux_generico_2x1
@@ -170,7 +181,8 @@ BEGIN
         )
         PORT MAP (
             habilita => habilitaPerifericos,
-            seletor => enderecoRAM
+            seletor => enderecoRAM,
+            opcode => opCodeLocal
         );
 
     RAM : ENTITY work.memoria_ram

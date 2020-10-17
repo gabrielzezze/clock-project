@@ -74,22 +74,22 @@ BEGIN
             overFlow  => '0',
             saida7seg => signal_hex5);
 
-    HEX0 <= signal_hex0 WHEN endereco = "000000101" ELSE
+    HEX0 <= signal_hex0 WHEN endereco = "000000101" AND habilita = '1' ELSE
         (OTHERS => 'Z');
 
-    HEX1 <= signal_hex1 WHEN endereco = "000000101" ELSE
+    HEX1 <= signal_hex1 WHEN endereco = "000000101" AND habilita = '1' ELSE
         (OTHERS => 'Z');
 
-    HEX2 <= signal_hex2 WHEN endereco = "000000110" ELSE
+    HEX2 <= signal_hex2 WHEN endereco = "000000110" AND habilita = '1' ELSE
         (OTHERS => 'Z');
 
-    HEX3 <= signal_hex3 WHEN endereco = "000000110" ELSE
+    HEX3 <= signal_hex3 WHEN endereco = "000000110" AND habilita = '1' ELSE
         (OTHERS => 'Z');
 
-    HEX4 <= signal_hex4 WHEN endereco = "000000111" ELSE
+    HEX4 <= signal_hex4 WHEN endereco = "000000111" AND habilita = '1' ELSE
         (OTHERS => 'Z');
 
-    HEX5 <= signal_hex5 WHEN endereco = "000000111" ELSE
+    HEX5 <= signal_hex5 WHEN endereco = "000000111" AND habilita = '1' ELSE
         (OTHERS => 'Z');
     
 END ARCHITECTURE;

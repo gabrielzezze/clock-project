@@ -28,9 +28,9 @@ ARCHITECTURE main OF processador IS
 
     SIGNAL progCount       : std_logic_vector(ADDR_WIDTH - 1 DOWNTO 0);
     SIGNAL saiAcumulador   : std_logic_vector(DATA_WIDTH - 1 DOWNTO 0);
-    SIGNAL palavraControle : std_logic_vector(8 DOWNTO 0); -- Pontos de controle concatenados 
+    SIGNAL palavraControle : std_logic_vector(9 DOWNTO 0); -- Pontos de controle concatenados 
     SIGNAL opCode          : std_logic_vector(3 DOWNTO 0);
-	SIGNAL flag_zero	   : std_logic;
+	SIGNAL flag_zero_out	   : std_logic;
 	 
 BEGIN
 		  
@@ -43,7 +43,7 @@ BEGIN
                 palavraControle => palavraControle,
                 opCode          => opCode,
                 clk             => clk,
-                flag_zero 		=> flag_zero
+                flag_zero_out 	=> flag_zero_out
             );
             
     FD: ENTITY work.fluxo_dados
@@ -56,7 +56,7 @@ BEGIN
             PORT MAP(
                 clk => clk,
                 palavraControle => palavraControle,
-                flag_zero   => flag_zero,
+                flag_zero_out   => flag_zero_out,
                 opCode => opCode,
                 sw => SW,
                 KEY => KEY,

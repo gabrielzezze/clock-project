@@ -1,5 +1,5 @@
 Analysis & Synthesis report for main
-Fri Oct 16 12:27:42 2020
+Sat Oct 17 12:52:43 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -42,12 +42,13 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  34. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex2"
  35. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex1"
  36. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0"
- 37. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|registrador_generico:PC"
- 38. Port Connectivity Checks: "processador:processador|fluxo_dados:FD"
- 39. Port Connectivity Checks: "processador:processador"
- 40. Post-Synthesis Netlist Statistics for Top Partition
- 41. Elapsed Time Per Partition
- 42. Analysis & Synthesis Messages
+ 37. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|flip_flop_generico:flip_flop_flag_zero"
+ 38. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|registrador_generico:PC"
+ 39. Port Connectivity Checks: "processador:processador|fluxo_dados:FD"
+ 40. Port Connectivity Checks: "processador:processador"
+ 41. Post-Synthesis Netlist Statistics for Top Partition
+ 42. Elapsed Time Per Partition
+ 43. Analysis & Synthesis Messages
 
 
 
@@ -74,13 +75,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Oct 16 12:27:42 2020       ;
+; Analysis & Synthesis Status     ; Successful - Sat Oct 17 12:52:43 2020       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; main                                        ;
 ; Top-level Entity Name           ; main                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 17                                          ;
+; Total registers                 ; 26                                          ;
 ; Total pins                      ; 68                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -194,35 +195,36 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                   ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                            ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
-; flip_flop_generico.vhd           ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/flip_flop_generico.vhd         ;         ;
-; divisor_generico_interface.vhd   ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/divisor_generico_interface.vhd ;         ;
-; divisor_generico.vhd             ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/divisor_generico.vhd           ;         ;
-; interface_hex.vhd                ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd              ;         ;
-; conversor_hex_7_segmentos.vhd    ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/conversor_hex_7_segmentos.vhd  ;         ;
-; interface_buttons.vhd            ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/interface_buttons.vhd          ;         ;
-; interface_switches.vhd           ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/interface_switches.vhd         ;         ;
-; memoria_ram.vhd                  ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/memoria_ram.vhd                ;         ;
-; decodificador_enderecos.vhd      ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/decodificador_enderecos.vhd    ;         ;
-; ula.vhd                          ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/ula.vhd                        ;         ;
-; banco_registradores.vhd          ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/banco_registradores.vhd        ;         ;
-; mux_generico_2x1.vhd             ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/mux_generico_2x1.vhd           ;         ;
-; soma_constante.vhd               ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/soma_constante.vhd             ;         ;
-; registrador_generico.vhd         ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/registrador_generico.vhd       ;         ;
-; memoria_rom.vhd                  ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/memoria_rom.vhd                ;         ;
-; fluxo_dados.vhd                  ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd                ;         ;
-; main.vhd                         ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/main.vhd                       ;         ;
-; unidade_controle.vhd             ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/unidade_controle.vhd           ;         ;
-; processador.vhd                  ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/processador.vhd                ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                        ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                 ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------+---------+
+; flip_flop_generico.vhd           ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/flip_flop_generico.vhd         ;         ;
+; divisor_generico_interface.vhd   ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/divisor_generico_interface.vhd ;         ;
+; divisor_generico.vhd             ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/divisor_generico.vhd           ;         ;
+; interface_hex.vhd                ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_hex.vhd              ;         ;
+; conversor_hex_7_segmentos.vhd    ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/conversor_hex_7_segmentos.vhd  ;         ;
+; interface_buttons.vhd            ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_buttons.vhd          ;         ;
+; interface_switches.vhd           ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_switches.vhd         ;         ;
+; memoria_ram.vhd                  ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/memoria_ram.vhd                ;         ;
+; decodificador_enderecos.vhd      ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/decodificador_enderecos.vhd    ;         ;
+; ula.vhd                          ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/ula.vhd                        ;         ;
+; banco_registradores.vhd          ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/banco_registradores.vhd        ;         ;
+; mux_generico_2x1.vhd             ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/mux_generico_2x1.vhd           ;         ;
+; soma_constante.vhd               ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/soma_constante.vhd             ;         ;
+; registrador_generico.vhd         ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/registrador_generico.vhd       ;         ;
+; memoria_rom.vhd                  ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/memoria_rom.vhd                ;         ;
+; fluxo_dados.vhd                  ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd                ;         ;
+; main.vhd                         ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd                       ;         ;
+; unidade_controle.vhd             ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/unidade_controle.vhd           ;         ;
+; processador.vhd                  ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/processador.vhd                ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -230,46 +232,50 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 27             ;
+; Estimate of Logic utilization (ALMs needed) ; 43             ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 53             ;
+; Combinational ALUT usage for logic          ; 81             ;
 ;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 0              ;
-;     -- 5 input functions                    ; 12             ;
-;     -- 4 input functions                    ; 24             ;
-;     -- <=3 input functions                  ; 17             ;
+;     -- 6 input functions                    ; 3              ;
+;     -- 5 input functions                    ; 11             ;
+;     -- 4 input functions                    ; 40             ;
+;     -- <=3 input functions                  ; 27             ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 17             ;
+; Dedicated logic registers                   ; 26             ;
 ;                                             ;                ;
 ; I/O pins                                    ; 68             ;
 ;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 17             ;
-; Total fan-out                               ; 351            ;
-; Average fan-out                             ; 1.70           ;
+; Maximum fan-out                             ; 26             ;
+; Total fan-out                               ; 532            ;
+; Average fan-out                             ; 2.19           ;
 +---------------------------------------------+----------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                         ;
-+----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------+----------------------+--------------+
-; Compilation Hierarchy Node                         ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                     ; Entity Name          ; Library Name ;
-+----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------+----------------------+--------------+
-; |main                                              ; 53 (0)              ; 17 (0)                    ; 0                 ; 0          ; 68   ; 0            ; |main                                                                                                   ; main                 ; work         ;
-;    |processador:processador|                       ; 53 (0)              ; 17 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador                                                                           ; processador          ; work         ;
-;       |fluxo_dados:FD|                             ; 51 (0)              ; 17 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD                                                            ; fluxo_dados          ; work         ;
-;          |ULA:ula|                                 ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|ULA:ula                                                    ; ULA                  ; work         ;
-;          |banco_registradores:banco_registradores| ; 9 (9)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores                    ; banco_registradores  ; work         ;
-;          |interface_hex:interface_hex|             ; 14 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex                                ; interface_hex        ; work         ;
-;             |conversorHex7Seg:conversorHex0|       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0 ; conversorHex7Seg     ; work         ;
-;             |conversorHex7Seg:conversorHex1|       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex1 ; conversorHex7Seg     ; work         ;
-;          |memoria_rom:ROM|                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|memoria_rom:ROM                                            ; memoria_rom          ; work         ;
-;          |registrador_generico:PC|                 ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|registrador_generico:PC                                    ; registrador_generico ; work         ;
-;          |soma_constante:somaUm|                   ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|soma_constante:somaUm                                      ; soma_constante       ; work         ;
-;       |unidade_controle:UC|                        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|unidade_controle:UC                                                       ; unidade_controle     ; work         ;
-+----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------+----------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                    ;
++------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------+-------------------------+--------------+
+; Compilation Hierarchy Node                                 ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                     ; Entity Name             ; Library Name ;
++------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------+-------------------------+--------------+
+; |main                                                      ; 81 (1)              ; 26 (0)                    ; 0                 ; 0          ; 68   ; 0            ; |main                                                                                                   ; main                    ; work         ;
+;    |processador:processador|                               ; 80 (0)              ; 26 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador                                                                           ; processador             ; work         ;
+;       |fluxo_dados:FD|                                     ; 76 (0)              ; 26 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD                                                            ; fluxo_dados             ; work         ;
+;          |ULA:ula|                                         ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|ULA:ula                                                    ; ULA                     ; work         ;
+;          |banco_registradores:banco_registradores|         ; 2 (2)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores                    ; banco_registradores     ; work         ;
+;          |decodificador_enderecos:decodificador_enderecos| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|decodificador_enderecos:decodificador_enderecos            ; decodificador_enderecos ; work         ;
+;          |flip_flop_generico:flip_flop_flag_zero|          ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|flip_flop_generico:flip_flop_flag_zero                     ; flip_flop_generico      ; work         ;
+;          |interface_hex:interface_hex|                     ; 17 (3)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex                                ; interface_hex           ; work         ;
+;             |conversorHex7Seg:conversorHex0|               ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0 ; conversorHex7Seg        ; work         ;
+;             |conversorHex7Seg:conversorHex1|               ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex1 ; conversorHex7Seg        ; work         ;
+;          |memoria_rom:ROM|                                 ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|memoria_rom:ROM                                            ; memoria_rom             ; work         ;
+;          |mux_generico_2x1:mux_RAM_imediato|               ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_RAM_imediato                          ; mux_generico_2x1        ; work         ;
+;          |mux_generico_2x1:mux_ULA_imediato_ou_ram|        ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_ULA_imediato_ou_ram                   ; mux_generico_2x1        ; work         ;
+;          |registrador_generico:PC|                         ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|registrador_generico:PC                                    ; registrador_generico    ; work         ;
+;          |soma_constante:somaUm|                           ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|soma_constante:somaUm                                      ; soma_constante          ; work         ;
+;       |unidade_controle:UC|                                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|unidade_controle:UC                                                       ; unidade_controle        ; work         ;
++------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -281,14 +287,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|flip_flop_generico:registraUmSegundo|DOUT ; Stuck at VCC due to stuck port data_in ;
 ; processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|divisor_generico:baseTempo|tick           ; Lost fanout                            ;
 ; processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|divisor_generico:baseTempo|contador[0..2] ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~20                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~21                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~22                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~23                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~24                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~25                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~26                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~27                            ; Lost fanout                            ;
 ; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~28                            ; Lost fanout                            ;
 ; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~29                            ; Lost fanout                            ;
 ; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~30                            ; Lost fanout                            ;
@@ -337,7 +335,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~73                            ; Lost fanout                            ;
 ; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~74                            ; Lost fanout                            ;
 ; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~75                            ; Lost fanout                            ;
-; Total Number of Removed Registers = 61                                                                                   ;                                        ;
+; Total Number of Removed Registers = 53                                                                                   ;                                        ;
 +--------------------------------------------------------------------------------------------------------------------------+----------------------------------------+
 
 
@@ -358,12 +356,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 17    ;
+; Total registers                              ; 26    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Synchronous Load   ; 9     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 8     ;
+; Number of registers using Clock Enable       ; 16    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -373,9 +371,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------+
-; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_ULA_imediato_ou_ram|saida_MUX[7]                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|ULA:ula|saida[0]                                                            ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_ULA_imediato_ou_ram|saida_MUX[5]                       ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_ULA_imediato_ou_ram|saida_MUX[2]                       ;
 ; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0|rascSaida7seg[1] ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex1|rascSaida7seg[0] ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex1|rascSaida7seg[2] ;
 ; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0|rascSaida7seg[6] ;
 ; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex1|rascSaida7seg[4] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------+
@@ -652,6 +652,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+-------+----------+-------------------------------------------------------------------------------------------------+
 
 
++-----------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "processador:processador|fluxo_dados:FD|flip_flop_generico:flip_flop_flag_zero" ;
++------+-------+----------+---------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                         ;
++------+-------+----------+---------------------------------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                                                    ;
++------+-------+----------+---------------------------------------------------------------------------------+
+
+
 +--------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "processador:processador|fluxo_dados:FD|registrador_generico:PC" ;
 +--------+-------+----------+----------------------------------------------------------------+
@@ -687,26 +696,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 17                          ;
-;     ENA               ; 8                           ;
-;     plain             ; 9                           ;
+; arriav_ff             ; 26                          ;
+;     ENA               ; 16                          ;
+;     SLD               ; 9                           ;
+;     plain             ; 1                           ;
 ; arriav_io_obuf        ; 42                          ;
-; arriav_lcell_comb     ; 54                          ;
+; arriav_lcell_comb     ; 81                          ;
 ;     arith             ; 18                          ;
-;         1 data inputs ; 9                           ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 5                           ;
-;     normal            ; 36                          ;
+;         1 data inputs ; 10                          ;
+;         4 data inputs ; 8                           ;
+;     normal            ; 63                          ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 19                          ;
-;         5 data inputs ; 12                          ;
+;         2 data inputs ; 13                          ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 32                          ;
+;         5 data inputs ; 11                          ;
+;         6 data inputs ; 3                           ;
 ; boundary_port         ; 68                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.80                        ;
-; Average LUT depth     ; 2.03                        ;
+; Max LUT depth         ; 5.80                        ;
+; Average LUT depth     ; 2.64                        ;
 +-----------------------+-----------------------------+
 
 
@@ -725,177 +734,134 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Oct 16 12:27:35 2020
+    Info: Processing started: Sat Oct 17 12:52:34 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto_clock -c main
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file flip_flop_generico.vhd
-    Info (12022): Found design unit 1: flip_flop_generico-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/flip_flop_generico.vhd Line: 12
-    Info (12023): Found entity 1: flip_flop_generico File: /home/gabrielzezze/Desktop/projeto_clock/flip_flop_generico.vhd Line: 4
+    Info (12022): Found design unit 1: flip_flop_generico-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/flip_flop_generico.vhd Line: 12
+    Info (12023): Found entity 1: flip_flop_generico File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/flip_flop_generico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file divisor_generico_interface.vhd
-    Info (12022): Found design unit 1: divisor_generico_interface-interface File: /home/gabrielzezze/Desktop/projeto_clock/divisor_generico_interface.vhd Line: 20
-    Info (12023): Found entity 1: divisor_generico_interface File: /home/gabrielzezze/Desktop/projeto_clock/divisor_generico_interface.vhd Line: 5
+    Info (12022): Found design unit 1: divisor_generico_interface-interface File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/divisor_generico_interface.vhd Line: 20
+    Info (12023): Found entity 1: divisor_generico_interface File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/divisor_generico_interface.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file divisor_generico.vhd
-    Info (12022): Found design unit 1: divisor_generico-div_inteiro File: /home/gabrielzezze/Desktop/projeto_clock/divisor_generico.vhd Line: 17
-    Info (12023): Found entity 1: divisor_generico File: /home/gabrielzezze/Desktop/projeto_clock/divisor_generico.vhd Line: 5
+    Info (12022): Found design unit 1: divisor_generico-div_inteiro File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/divisor_generico.vhd Line: 17
+    Info (12023): Found entity 1: divisor_generico File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/divisor_generico.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file interface_hex.vhd
-    Info (12022): Found design unit 1: interface_hex-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 18
-    Info (12023): Found entity 1: interface_hex File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 5
+    Info (12022): Found design unit 1: interface_hex-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_hex.vhd Line: 18
+    Info (12023): Found entity 1: interface_hex File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_hex.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file conversor_hex_7_segmentos.vhd
-    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/conversor_hex_7_segmentos.vhd Line: 17
-    Info (12023): Found entity 1: conversorHex7Seg File: /home/gabrielzezze/Desktop/projeto_clock/conversor_hex_7_segmentos.vhd Line: 4
+    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/conversor_hex_7_segmentos.vhd Line: 17
+    Info (12023): Found entity 1: conversorHex7Seg File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/conversor_hex_7_segmentos.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file interface_buttons.vhd
-    Info (12022): Found design unit 1: interface_buttons-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/interface_buttons.vhd Line: 17
-    Info (12023): Found entity 1: interface_buttons File: /home/gabrielzezze/Desktop/projeto_clock/interface_buttons.vhd Line: 5
+    Info (12022): Found design unit 1: interface_buttons-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_buttons.vhd Line: 17
+    Info (12023): Found entity 1: interface_buttons File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_buttons.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file interface_switches.vhd
-    Info (12022): Found design unit 1: interface_switches-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/interface_switches.vhd Line: 13
-    Info (12023): Found entity 1: interface_switches File: /home/gabrielzezze/Desktop/projeto_clock/interface_switches.vhd Line: 5
+    Info (12022): Found design unit 1: interface_switches-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_switches.vhd Line: 13
+    Info (12023): Found entity 1: interface_switches File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_switches.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file memoria_ram.vhd
-    Info (12022): Found design unit 1: memoria_ram-rtl File: /home/gabrielzezze/Desktop/projeto_clock/memoria_ram.vhd Line: 23
-    Info (12023): Found entity 1: memoria_ram File: /home/gabrielzezze/Desktop/projeto_clock/memoria_ram.vhd Line: 5
+    Info (12022): Found design unit 1: memoria_ram-rtl File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/memoria_ram.vhd Line: 23
+    Info (12023): Found entity 1: memoria_ram File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/memoria_ram.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file decodificador_enderecos.vhd
-    Info (12022): Found design unit 1: decodificador_enderecos-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/decodificador_enderecos.vhd Line: 15
-    Info (12023): Found entity 1: decodificador_enderecos File: /home/gabrielzezze/Desktop/projeto_clock/decodificador_enderecos.vhd Line: 5
+    Info (12022): Found design unit 1: decodificador_enderecos-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/decodificador_enderecos.vhd Line: 16
+    Info (12023): Found entity 1: decodificador_enderecos File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/decodificador_enderecos.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
-    Info (12022): Found design unit 1: ULA-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/ula.vhd Line: 17
-    Info (12023): Found entity 1: ULA File: /home/gabrielzezze/Desktop/projeto_clock/ula.vhd Line: 5
+    Info (12022): Found design unit 1: ULA-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/ula.vhd Line: 17
+    Info (12023): Found entity 1: ULA File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/ula.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file banco_registradores.vhd
-    Info (12022): Found design unit 1: banco_registradores-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/banco_registradores.vhd Line: 28
-    Info (12023): Found entity 1: banco_registradores File: /home/gabrielzezze/Desktop/projeto_clock/banco_registradores.vhd Line: 5
+    Info (12022): Found design unit 1: banco_registradores-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/banco_registradores.vhd Line: 28
+    Info (12023): Found entity 1: banco_registradores File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/banco_registradores.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mux_generico_2x1.vhd
-    Info (12022): Found design unit 1: mux_generico_2x1-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/mux_generico_2x1.vhd Line: 15
-    Info (12023): Found entity 1: mux_generico_2x1 File: /home/gabrielzezze/Desktop/projeto_clock/mux_generico_2x1.vhd Line: 4
+    Info (12022): Found design unit 1: mux_generico_2x1-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/mux_generico_2x1.vhd Line: 15
+    Info (12023): Found entity 1: mux_generico_2x1 File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/mux_generico_2x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file soma_constante.vhd
-    Info (12022): Found design unit 1: soma_constante-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/soma_constante.vhd Line: 18
-    Info (12023): Found entity 1: soma_constante File: /home/gabrielzezze/Desktop/projeto_clock/soma_constante.vhd Line: 5
+    Info (12022): Found design unit 1: soma_constante-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/soma_constante.vhd Line: 18
+    Info (12023): Found entity 1: soma_constante File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/soma_constante.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file registrador_generico.vhd
-    Info (12022): Found design unit 1: registrador_generico-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/registrador_generico.vhd Line: 18
-    Info (12023): Found entity 1: registrador_generico File: /home/gabrielzezze/Desktop/projeto_clock/registrador_generico.vhd Line: 4
+    Info (12022): Found design unit 1: registrador_generico-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/registrador_generico.vhd Line: 18
+    Info (12023): Found entity 1: registrador_generico File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/registrador_generico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file memoria_rom.vhd
-    Info (12022): Found design unit 1: memoria_rom-assincrona File: /home/gabrielzezze/Desktop/projeto_clock/memoria_rom.vhd Line: 18
-    Info (12023): Found entity 1: memoria_rom File: /home/gabrielzezze/Desktop/projeto_clock/memoria_rom.vhd Line: 5
+    Info (12022): Found design unit 1: memoria_rom-assincrona File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/memoria_rom.vhd Line: 18
+    Info (12023): Found entity 1: memoria_rom File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/memoria_rom.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file fluxo_dados.vhd
-    Info (12022): Found design unit 1: fluxo_dados-main File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 31
-    Info (12023): Found entity 1: fluxo_dados File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 5
+    Info (12022): Found design unit 1: fluxo_dados-main File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 31
+    Info (12023): Found entity 1: fluxo_dados File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file main.vhd
-    Info (12022): Found design unit 1: main-main File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 25
-    Info (12023): Found entity 1: main File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 4
+    Info (12022): Found design unit 1: main-main File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 25
+    Info (12023): Found entity 1: main File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file unidade_controle.vhd
-    Info (12022): Found design unit 1: unidade_controle-main File: /home/gabrielzezze/Desktop/projeto_clock/unidade_controle.vhd Line: 26
-    Info (12023): Found entity 1: unidade_controle File: /home/gabrielzezze/Desktop/projeto_clock/unidade_controle.vhd Line: 5
+    Info (12022): Found design unit 1: unidade_controle-main File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/unidade_controle.vhd Line: 26
+    Info (12023): Found entity 1: unidade_controle File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/unidade_controle.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file processador.vhd
-    Info (12022): Found design unit 1: processador-main File: /home/gabrielzezze/Desktop/projeto_clock/processador.vhd Line: 27
-    Info (12023): Found entity 1: processador File: /home/gabrielzezze/Desktop/projeto_clock/processador.vhd Line: 5
+    Info (12022): Found design unit 1: processador-main File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/processador.vhd Line: 27
+    Info (12023): Found entity 1: processador File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/processador.vhd Line: 5
 Info (12127): Elaborating entity "main" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at main.vhd(18): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 18
-Info (12128): Elaborating entity "processador" for hierarchy "processador:processador" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 28
-Warning (10541): VHDL Signal Declaration warning at processador.vhd(20): used implicit default value for signal "saidaAcumulador" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/processador.vhd Line: 20
-Warning (10541): VHDL Signal Declaration warning at processador.vhd(21): used implicit default value for signal "programCounter" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/processador.vhd Line: 21
-Info (12128): Elaborating entity "unidade_controle" for hierarchy "processador:processador|unidade_controle:UC" File: /home/gabrielzezze/Desktop/projeto_clock/processador.vhd Line: 37
-Info (12128): Elaborating entity "fluxo_dados" for hierarchy "processador:processador|fluxo_dados:FD" File: /home/gabrielzezze/Desktop/projeto_clock/processador.vhd Line: 49
-Warning (10541): VHDL Signal Declaration warning at fluxo_dados.vhd(23): used implicit default value for signal "saidaAcumulador" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 23
-Info (12128): Elaborating entity "registrador_generico" for hierarchy "processador:processador|fluxo_dados:FD|registrador_generico:PC" File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 73
-Info (12128): Elaborating entity "mux_generico_2x1" for hierarchy "processador:processador|fluxo_dados:FD|mux_generico_2x1:MuxProxPC" File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 85
-Info (12128): Elaborating entity "soma_constante" for hierarchy "processador:processador|fluxo_dados:FD|soma_constante:somaUm" File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 96
-Info (12128): Elaborating entity "memoria_rom" for hierarchy "processador:processador|fluxo_dados:FD|memoria_rom:ROM" File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 106
-Info (12128): Elaborating entity "mux_generico_2x1" for hierarchy "processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_RAM_imediato" File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 116
-Info (12128): Elaborating entity "banco_registradores" for hierarchy "processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores" File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 127
-Info (12128): Elaborating entity "ULA" for hierarchy "processador:processador|fluxo_dados:FD|ULA:ula" File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 144
-Info (12128): Elaborating entity "decodificador_enderecos" for hierarchy "processador:processador|fluxo_dados:FD|decodificador_enderecos:decodificador_enderecos" File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 167
-Info (12128): Elaborating entity "memoria_ram" for hierarchy "processador:processador|fluxo_dados:FD|memoria_ram:RAM" File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 176
-Info (12128): Elaborating entity "interface_switches" for hierarchy "processador:processador|fluxo_dados:FD|interface_switches:interface_switches" File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 191
-Info (12128): Elaborating entity "interface_buttons" for hierarchy "processador:processador|fluxo_dados:FD|interface_buttons:interface_buttons" File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 198
-Info (12128): Elaborating entity "interface_hex" for hierarchy "processador:processador|fluxo_dados:FD|interface_hex:interface_hex" File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 209
-Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 29
-Info (12128): Elaborating entity "divisor_generico_interface" for hierarchy "processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador" File: /home/gabrielzezze/Desktop/projeto_clock/fluxo_dados.vhd Line: 226
-Info (12128): Elaborating entity "divisor_generico" for hierarchy "processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|divisor_generico:baseTempo" File: /home/gabrielzezze/Desktop/projeto_clock/divisor_generico_interface.vhd Line: 27
-Info (12128): Elaborating entity "flip_flop_generico" for hierarchy "processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|flip_flop_generico:registraUmSegundo" File: /home/gabrielzezze/Desktop/projeto_clock/divisor_generico_interface.vhd Line: 31
+Warning (10541): VHDL Signal Declaration warning at main.vhd(18): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
+Info (12128): Elaborating entity "processador" for hierarchy "processador:processador" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 28
+Warning (10541): VHDL Signal Declaration warning at processador.vhd(20): used implicit default value for signal "saidaAcumulador" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/processador.vhd Line: 20
+Warning (10541): VHDL Signal Declaration warning at processador.vhd(21): used implicit default value for signal "programCounter" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/processador.vhd Line: 21
+Info (12128): Elaborating entity "unidade_controle" for hierarchy "processador:processador|unidade_controle:UC" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/processador.vhd Line: 37
+Info (12128): Elaborating entity "fluxo_dados" for hierarchy "processador:processador|fluxo_dados:FD" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/processador.vhd Line: 49
+Warning (10541): VHDL Signal Declaration warning at fluxo_dados.vhd(24): used implicit default value for signal "saidaAcumulador" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 24
+Info (12128): Elaborating entity "registrador_generico" for hierarchy "processador:processador|fluxo_dados:FD|registrador_generico:PC" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 75
+Info (12128): Elaborating entity "mux_generico_2x1" for hierarchy "processador:processador|fluxo_dados:FD|mux_generico_2x1:MuxProxPC" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 87
+Info (12128): Elaborating entity "soma_constante" for hierarchy "processador:processador|fluxo_dados:FD|soma_constante:somaUm" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 98
+Info (12128): Elaborating entity "memoria_rom" for hierarchy "processador:processador|fluxo_dados:FD|memoria_rom:ROM" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 108
+Info (12128): Elaborating entity "mux_generico_2x1" for hierarchy "processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_RAM_imediato" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 118
+Info (12128): Elaborating entity "banco_registradores" for hierarchy "processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 129
+Info (12128): Elaborating entity "ULA" for hierarchy "processador:processador|fluxo_dados:FD|ULA:ula" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 146
+Info (12128): Elaborating entity "flip_flop_generico" for hierarchy "processador:processador|fluxo_dados:FD|flip_flop_generico:flip_flop_flag_zero" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 158
+Info (12128): Elaborating entity "decodificador_enderecos" for hierarchy "processador:processador|fluxo_dados:FD|decodificador_enderecos:decodificador_enderecos" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 178
+Info (12128): Elaborating entity "memoria_ram" for hierarchy "processador:processador|fluxo_dados:FD|memoria_ram:RAM" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 188
+Info (12128): Elaborating entity "interface_switches" for hierarchy "processador:processador|fluxo_dados:FD|interface_switches:interface_switches" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 203
+Info (12128): Elaborating entity "interface_buttons" for hierarchy "processador:processador|fluxo_dados:FD|interface_buttons:interface_buttons" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 210
+Info (12128): Elaborating entity "interface_hex" for hierarchy "processador:processador|fluxo_dados:FD|interface_hex:interface_hex" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 221
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_hex.vhd Line: 29
+Info (12128): Elaborating entity "divisor_generico_interface" for hierarchy "processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 238
+Info (12128): Elaborating entity "divisor_generico" for hierarchy "processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|divisor_generico:baseTempo" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/divisor_generico_interface.vhd Line: 27
 Info (276014): Found 2 instances of uninferred RAM logic
-    Info (276007): RAM logic "processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram" is uninferred due to asynchronous read logic File: /home/gabrielzezze/Desktop/projeto_clock/memoria_ram.vhd Line: 30
-    Info (276007): RAM logic "processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador" is uninferred due to asynchronous read logic File: /home/gabrielzezze/Desktop/projeto_clock/banco_registradores.vhd Line: 34
+    Info (276007): RAM logic "processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram" is uninferred due to asynchronous read logic File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/memoria_ram.vhd Line: 30
+    Info (276007): RAM logic "processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador" is uninferred due to asynchronous read logic File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/banco_registradores.vhd Line: 34
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[7]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/mux_generico_2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[6]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/mux_generico_2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[5]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/mux_generico_2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[4]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/mux_generico_2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[3]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/mux_generico_2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[2]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/mux_generico_2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[1]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/mux_generico_2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[0]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/mux_generico_2x1.vhd Line: 10
-Warning (13008): TRI or OPNDRN buffers permanently disabled
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX0[0]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX0[1]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX0[2]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX0[3]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX0[4]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX0[5]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX0[6]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX1[0]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX1[1]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX1[2]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX1[3]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX1[4]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX1[5]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX1[6]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX2[0]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX2[1]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX2[2]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX2[3]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX2[4]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX2[5]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX2[6]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX3[0]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX3[1]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX3[2]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX3[3]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX3[4]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX3[5]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX3[6]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX4[0]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX4[1]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX4[2]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX4[3]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX4[4]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX4[5]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX4[6]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX5[0]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX5[1]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX5[2]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX5[3]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX5[4]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX5[5]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
-    Warning (13010): Node "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|HEX5[6]" File: /home/gabrielzezze/Desktop/projeto_clock/interface_hex.vhd Line: 11
+    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[7]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/mux_generico_2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[6]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/mux_generico_2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[5]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/mux_generico_2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[4]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/mux_generico_2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[3]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/mux_generico_2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[2]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/mux_generico_2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[1]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/mux_generico_2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[0]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/mux_generico_2x1.vhd Line: 10
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[0]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 18
-    Warning (13410): Pin "LEDR[1]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 18
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 18
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 18
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 18
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 18
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 18
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 18
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 18
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[0]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 60 registers lost all their fanouts during netlist optimizations.
+Info (17049): 52 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 7 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[8]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 13
-    Warning (15610): No output dependent on input pin "SW[9]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 13
-    Warning (15610): No output dependent on input pin "KEY[0]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 14
-    Warning (15610): No output dependent on input pin "KEY[1]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 14
-    Warning (15610): No output dependent on input pin "KEY[2]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 14
-    Warning (15610): No output dependent on input pin "KEY[3]" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 14
-    Warning (15610): No output dependent on input pin "FPGA_RESET_N" File: /home/gabrielzezze/Desktop/projeto_clock/main.vhd Line: 15
-Info (21057): Implemented 121 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "SW[8]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
+    Warning (15610): No output dependent on input pin "SW[9]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
+    Warning (15610): No output dependent on input pin "FPGA_RESET_N" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 15
+    Warning (15610): No output dependent on input pin "KEY[0]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 14
+    Warning (15610): No output dependent on input pin "KEY[2]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 14
+    Warning (15610): No output dependent on input pin "SW[2]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
+    Warning (15610): No output dependent on input pin "SW[1]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
+Info (21057): Implemented 165 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 53 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 76 warnings
-    Info: Peak virtual memory: 545 megabytes
-    Info: Processing ended: Fri Oct 16 12:27:42 2020
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:15
+    Info (21061): Implemented 97 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 33 warnings
+    Info: Peak virtual memory: 547 megabytes
+    Info: Processing ended: Sat Oct 17 12:52:43 2020
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:16
 
 
