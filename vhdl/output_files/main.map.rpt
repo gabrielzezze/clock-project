@@ -1,5 +1,5 @@
 Analysis & Synthesis report for main
-Sat Oct 17 12:52:43 2020
+Sat Oct 17 17:35:36 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -14,41 +14,38 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: Top-level Entity: |main
- 13. Parameter Settings for User Entity Instance: processador:processador
- 14. Parameter Settings for User Entity Instance: processador:processador|unidade_controle:UC
- 15. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD
- 16. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|registrador_generico:PC
- 17. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|mux_generico_2x1:MuxProxPC
- 18. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|soma_constante:somaUm
- 19. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|memoria_rom:ROM
- 20. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_RAM_imediato
- 21. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores
- 22. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|ULA:ula
- 23. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_ULA_imediato_ou_ram
- 24. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|decodificador_enderecos:decodificador_enderecos
- 25. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|memoria_ram:RAM
- 26. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|interface_buttons:interface_buttons
- 27. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|interface_hex:interface_hex
- 28. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador
- 29. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|divisor_generico:baseTempo
- 30. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|flip_flop_generico:registraUmSegundo"
- 31. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex5"
- 32. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex4"
- 33. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex3"
- 34. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex2"
- 35. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex1"
- 36. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0"
- 37. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|flip_flop_generico:flip_flop_flag_zero"
- 38. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|registrador_generico:PC"
- 39. Port Connectivity Checks: "processador:processador|fluxo_dados:FD"
- 40. Port Connectivity Checks: "processador:processador"
- 41. Post-Synthesis Netlist Statistics for Top Partition
- 42. Elapsed Time Per Partition
- 43. Analysis & Synthesis Messages
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |main
+ 12. Parameter Settings for User Entity Instance: processador:processador
+ 13. Parameter Settings for User Entity Instance: processador:processador|unidade_controle:UC
+ 14. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD
+ 15. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|registrador_generico:PC
+ 16. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|mux_generico_2x1:MuxProxPC
+ 17. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|soma_constante:somaUm
+ 18. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|memoria_rom:ROM
+ 19. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_RAM_imediato
+ 20. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores
+ 21. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|ULA:ula
+ 22. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_ULA_imediato_ou_ram
+ 23. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|decodificador_enderecos:decodificador_enderecos
+ 24. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|memoria_ram:RAM
+ 25. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|interface_buttons:interface_buttons
+ 26. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|interface_hex:interface_hex
+ 27. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador
+ 28. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex5"
+ 29. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex4"
+ 30. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex3"
+ 31. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex2"
+ 32. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex1"
+ 33. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0"
+ 34. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|flip_flop_generico:flip_flop_flag_zero"
+ 35. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|registrador_generico:PC"
+ 36. Port Connectivity Checks: "processador:processador|fluxo_dados:FD"
+ 37. Port Connectivity Checks: "processador:processador"
+ 38. Post-Synthesis Netlist Statistics for Top Partition
+ 39. Elapsed Time Per Partition
+ 40. Analysis & Synthesis Messages
 
 
 
@@ -75,13 +72,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Oct 17 12:52:43 2020       ;
+; Analysis & Synthesis Status     ; Successful - Sat Oct 17 17:35:36 2020       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; main                                        ;
 ; Top-level Entity Name           ; main                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 26                                          ;
+; Total registers                 ; 69                                          ;
 ; Total pins                      ; 68                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -207,7 +204,6 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------+---------+
 ; flip_flop_generico.vhd           ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/flip_flop_generico.vhd         ;         ;
 ; divisor_generico_interface.vhd   ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/divisor_generico_interface.vhd ;         ;
-; divisor_generico.vhd             ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/divisor_generico.vhd           ;         ;
 ; interface_hex.vhd                ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_hex.vhd              ;         ;
 ; conversor_hex_7_segmentos.vhd    ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/conversor_hex_7_segmentos.vhd  ;         ;
 ; interface_buttons.vhd            ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_buttons.vhd          ;         ;
@@ -232,123 +228,93 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 43             ;
+; Estimate of Logic utilization (ALMs needed) ; 82             ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 81             ;
+; Combinational ALUT usage for logic          ; 139            ;
 ;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 3              ;
-;     -- 5 input functions                    ; 11             ;
-;     -- 4 input functions                    ; 40             ;
-;     -- <=3 input functions                  ; 27             ;
+;     -- 6 input functions                    ; 21             ;
+;     -- 5 input functions                    ; 13             ;
+;     -- 4 input functions                    ; 34             ;
+;     -- <=3 input functions                  ; 71             ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 26             ;
+; Dedicated logic registers                   ; 69             ;
 ;                                             ;                ;
 ; I/O pins                                    ; 68             ;
 ;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 26             ;
-; Total fan-out                               ; 532            ;
-; Average fan-out                             ; 2.19           ;
+; Maximum fan-out                             ; 69             ;
+; Total fan-out                               ; 865            ;
+; Average fan-out                             ; 2.51           ;
 +---------------------------------------------+----------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                    ;
-+------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------+-------------------------+--------------+
-; Compilation Hierarchy Node                                 ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                     ; Entity Name             ; Library Name ;
-+------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------+-------------------------+--------------+
-; |main                                                      ; 81 (1)              ; 26 (0)                    ; 0                 ; 0          ; 68   ; 0            ; |main                                                                                                   ; main                    ; work         ;
-;    |processador:processador|                               ; 80 (0)              ; 26 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador                                                                           ; processador             ; work         ;
-;       |fluxo_dados:FD|                                     ; 76 (0)              ; 26 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD                                                            ; fluxo_dados             ; work         ;
-;          |ULA:ula|                                         ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|ULA:ula                                                    ; ULA                     ; work         ;
-;          |banco_registradores:banco_registradores|         ; 2 (2)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores                    ; banco_registradores     ; work         ;
-;          |decodificador_enderecos:decodificador_enderecos| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|decodificador_enderecos:decodificador_enderecos            ; decodificador_enderecos ; work         ;
-;          |flip_flop_generico:flip_flop_flag_zero|          ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|flip_flop_generico:flip_flop_flag_zero                     ; flip_flop_generico      ; work         ;
-;          |interface_hex:interface_hex|                     ; 17 (3)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex                                ; interface_hex           ; work         ;
-;             |conversorHex7Seg:conversorHex0|               ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0 ; conversorHex7Seg        ; work         ;
-;             |conversorHex7Seg:conversorHex1|               ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex1 ; conversorHex7Seg        ; work         ;
-;          |memoria_rom:ROM|                                 ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|memoria_rom:ROM                                            ; memoria_rom             ; work         ;
-;          |mux_generico_2x1:mux_RAM_imediato|               ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_RAM_imediato                          ; mux_generico_2x1        ; work         ;
-;          |mux_generico_2x1:mux_ULA_imediato_ou_ram|        ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_ULA_imediato_ou_ram                   ; mux_generico_2x1        ; work         ;
-;          |registrador_generico:PC|                         ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|registrador_generico:PC                                    ; registrador_generico    ; work         ;
-;          |soma_constante:somaUm|                           ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|soma_constante:somaUm                                      ; soma_constante          ; work         ;
-;       |unidade_controle:UC|                                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|unidade_controle:UC                                                       ; unidade_controle        ; work         ;
-+------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------+-------------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                       ;
++------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------+----------------------------+--------------+
+; Compilation Hierarchy Node                                 ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                     ; Entity Name                ; Library Name ;
++------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------+----------------------------+--------------+
+; |main                                                      ; 139 (1)             ; 69 (0)                    ; 0                 ; 0          ; 68   ; 0            ; |main                                                                                                   ; main                       ; work         ;
+;    |processador:processador|                               ; 138 (0)             ; 69 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador                                                                           ; processador                ; work         ;
+;       |fluxo_dados:FD|                                     ; 134 (0)             ; 69 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD                                                            ; fluxo_dados                ; work         ;
+;          |ULA:ula|                                         ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|ULA:ula                                                    ; ULA                        ; work         ;
+;          |banco_registradores:banco_registradores|         ; 20 (20)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores                    ; banco_registradores        ; work         ;
+;          |decodificador_enderecos:decodificador_enderecos| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|decodificador_enderecos:decodificador_enderecos            ; decodificador_enderecos    ; work         ;
+;          |divisor_generico_interface:temporizador|         ; 31 (31)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador                    ; divisor_generico_interface ; work         ;
+;          |flip_flop_generico:flip_flop_flag_zero|          ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|flip_flop_generico:flip_flop_flag_zero                     ; flip_flop_generico         ; work         ;
+;          |interface_hex:interface_hex|                     ; 16 (2)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex                                ; interface_hex              ; work         ;
+;             |conversorHex7Seg:conversorHex0|               ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0 ; conversorHex7Seg           ; work         ;
+;             |conversorHex7Seg:conversorHex1|               ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex1 ; conversorHex7Seg           ; work         ;
+;          |memoria_rom:ROM|                                 ; 23 (23)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|memoria_rom:ROM                                            ; memoria_rom                ; work         ;
+;          |mux_generico_2x1:mux_RAM_imediato|               ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_RAM_imediato                          ; mux_generico_2x1           ; work         ;
+;          |mux_generico_2x1:mux_ULA_imediato_ou_ram|        ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_ULA_imediato_ou_ram                   ; mux_generico_2x1           ; work         ;
+;          |registrador_generico:PC|                         ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|registrador_generico:PC                                    ; registrador_generico       ; work         ;
+;          |soma_constante:somaUm|                           ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|soma_constante:somaUm                                      ; soma_constante             ; work         ;
+;       |unidade_controle:UC|                                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|unidade_controle:UC                                                       ; unidade_controle           ; work         ;
++------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------+----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                ;
-+--------------------------------------------------------------------------------------------------------------------------+----------------------------------------+
-; Register name                                                                                                            ; Reason for Removal                     ;
-+--------------------------------------------------------------------------------------------------------------------------+----------------------------------------+
-; processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|flip_flop_generico:registraUmSegundo|DOUT ; Stuck at VCC due to stuck port data_in ;
-; processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|divisor_generico:baseTempo|tick           ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|divisor_generico:baseTempo|contador[0..2] ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~28                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~29                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~30                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~31                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~32                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~33                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~34                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~35                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~36                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~37                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~38                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~39                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~40                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~41                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~42                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~43                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~44                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~45                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~46                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~47                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~48                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~49                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~50                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~51                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~52                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~53                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~54                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~55                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~56                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~57                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~58                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~59                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~60                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~61                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~62                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~63                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~64                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~65                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~66                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~67                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~68                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~69                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~70                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~71                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~72                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~73                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~74                            ; Lost fanout                            ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~75                            ; Lost fanout                            ;
-; Total Number of Removed Registers = 53                                                                                   ;                                        ;
-+--------------------------------------------------------------------------------------------------------------------------+----------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                                                                                                                                   ;
-+--------------------------------------------------------------------------------------------------------------------------+---------------------------+------------------------------------------------------------------------------------------------------------------------+
-; Register name                                                                                                            ; Reason for Removal        ; Registers Removed due to This Register                                                                                 ;
-+--------------------------------------------------------------------------------------------------------------------------+---------------------------+------------------------------------------------------------------------------------------------------------------------+
-; processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|flip_flop_generico:registraUmSegundo|DOUT ; Stuck at VCC              ; processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|divisor_generico:baseTempo|tick,        ;
-;                                                                                                                          ; due to stuck port data_in ; processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|divisor_generico:baseTempo|contador[0], ;
-;                                                                                                                          ;                           ; processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|divisor_generico:baseTempo|contador[1], ;
-;                                                                                                                          ;                           ; processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|divisor_generico:baseTempo|contador[2]  ;
-+--------------------------------------------------------------------------------------------------------------------------+---------------------------+------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                 ;
++-----------------------------------------------------------------------------------------------+--------------------+
+; Register name                                                                                 ; Reason for Removal ;
++-----------------------------------------------------------------------------------------------+--------------------+
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~44 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~45 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~46 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~47 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~48 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~49 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~50 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~51 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~52 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~53 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~54 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~55 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~56 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~57 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~58 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~59 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~60 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~61 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~62 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~63 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~64 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~65 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~66 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~67 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~68 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~69 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~70 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~71 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~72 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~73 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~74 ; Lost fanout        ;
+; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~75 ; Lost fanout        ;
+; Total Number of Removed Registers = 32                                                        ;                    ;
++-----------------------------------------------------------------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -356,12 +322,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 26    ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 69    ;
+; Number of registers using Synchronous Clear  ; 26    ;
 ; Number of registers using Synchronous Load   ; 9     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 16    ;
+; Number of registers using Clock Enable       ; 58    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -371,12 +337,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |main|processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|contador[16]                        ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|ULA:ula|saida[0]                                                            ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_ULA_imediato_ou_ram|saida_MUX[5]                       ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_ULA_imediato_ou_ram|saida_MUX[2]                       ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_ULA_imediato_ou_ram|saida_MUX[6]                       ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_ULA_imediato_ou_ram|saida_MUX[1]                       ;
 ; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0|rascSaida7seg[1] ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex1|rascSaida7seg[2] ;
-; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0|rascSaida7seg[6] ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex1|rascSaida7seg[0] ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0|rascSaida7seg[4] ;
 ; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex1|rascSaida7seg[4] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------+
 
@@ -566,26 +533,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|divisor_generico:baseTempo ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                                                          ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------------------------------+
-; divisor        ; 5     ; Signed Integer                                                                                                                ;
-+----------------+-------+-------------------------------------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|flip_flop_generico:registraUmSegundo" ;
-+--------+-------+----------+---------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type  ; Severity ; Details                                                                                                             ;
-+--------+-------+----------+---------------------------------------------------------------------------------------------------------------------+
-; din    ; Input ; Info     ; Stuck at VCC                                                                                                        ;
-; enable ; Input ; Info     ; Stuck at VCC                                                                                                        ;
-+--------+-------+----------+---------------------------------------------------------------------------------------------------------------------+
-
-
 +-------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex5" ;
 +----------+-------+----------+-------------------------------------------------------------------------------------------------+
@@ -696,26 +643,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 26                          ;
-;     ENA               ; 16                          ;
+; arriav_ff             ; 69                          ;
+;     ENA               ; 32                          ;
+;     ENA SCLR          ; 26                          ;
 ;     SLD               ; 9                           ;
-;     plain             ; 1                           ;
+;     plain             ; 2                           ;
 ; arriav_io_obuf        ; 42                          ;
-; arriav_lcell_comb     ; 81                          ;
-;     arith             ; 18                          ;
-;         1 data inputs ; 10                          ;
-;         4 data inputs ; 8                           ;
-;     normal            ; 63                          ;
+; arriav_lcell_comb     ; 139                         ;
+;     arith             ; 44                          ;
+;         1 data inputs ; 36                          ;
+;         3 data inputs ; 8                           ;
+;     normal            ; 95                          ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 13                          ;
-;         3 data inputs ; 3                           ;
-;         4 data inputs ; 32                          ;
-;         5 data inputs ; 11                          ;
-;         6 data inputs ; 3                           ;
+;         2 data inputs ; 19                          ;
+;         3 data inputs ; 7                           ;
+;         4 data inputs ; 34                          ;
+;         5 data inputs ; 13                          ;
+;         6 data inputs ; 21                          ;
 ; boundary_port         ; 68                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.80                        ;
-; Average LUT depth     ; 2.64                        ;
+; Max LUT depth         ; 6.70                        ;
+; Average LUT depth     ; 3.49                        ;
 +-----------------------+-----------------------------+
 
 
@@ -724,7 +672,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -734,7 +682,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Oct 17 12:52:34 2020
+    Info: Processing started: Sat Oct 17 17:35:21 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto_clock -c main
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -818,7 +766,7 @@ Info (12128): Elaborating entity "interface_buttons" for hierarchy "processador:
 Info (12128): Elaborating entity "interface_hex" for hierarchy "processador:processador|fluxo_dados:FD|interface_hex:interface_hex" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 221
 Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_hex.vhd Line: 29
 Info (12128): Elaborating entity "divisor_generico_interface" for hierarchy "processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 238
-Info (12128): Elaborating entity "divisor_generico" for hierarchy "processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|divisor_generico:baseTempo" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/divisor_generico_interface.vhd Line: 27
+Warning (10540): VHDL Signal Declaration warning at divisor_generico_interface.vhd(25): used explicit default value for signal "divisor" because signal was never assigned a value File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/divisor_generico_interface.vhd Line: 25
 Info (276014): Found 2 instances of uninferred RAM logic
     Info (276007): RAM logic "processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram" is uninferred due to asynchronous read logic File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/memoria_ram.vhd Line: 30
     Info (276007): RAM logic "processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador" is uninferred due to asynchronous read logic File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/banco_registradores.vhd Line: 34
@@ -843,25 +791,29 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[8]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
     Warning (13410): Pin "LEDR[9]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 52 registers lost all their fanouts during netlist optimizations.
+Info (17049): 32 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 7 input pin(s) that do not drive logic
+Warning (21074): Design contains 11 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[8]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
     Warning (15610): No output dependent on input pin "SW[9]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
     Warning (15610): No output dependent on input pin "FPGA_RESET_N" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 15
-    Warning (15610): No output dependent on input pin "KEY[0]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 14
-    Warning (15610): No output dependent on input pin "KEY[2]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 14
-    Warning (15610): No output dependent on input pin "SW[2]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
     Warning (15610): No output dependent on input pin "SW[1]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
-Info (21057): Implemented 165 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "SW[3]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
+    Warning (15610): No output dependent on input pin "SW[2]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
+    Warning (15610): No output dependent on input pin "SW[0]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
+    Warning (15610): No output dependent on input pin "SW[5]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
+    Warning (15610): No output dependent on input pin "SW[7]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
+    Warning (15610): No output dependent on input pin "SW[6]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
+    Warning (15610): No output dependent on input pin "SW[4]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
+Info (21057): Implemented 240 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 97 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 33 warnings
-    Info: Peak virtual memory: 547 megabytes
-    Info: Processing ended: Sat Oct 17 12:52:43 2020
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:16
+    Info (21061): Implemented 172 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
+    Info: Peak virtual memory: 557 megabytes
+    Info: Processing ended: Sat Oct 17 17:35:36 2020
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:32
 
 

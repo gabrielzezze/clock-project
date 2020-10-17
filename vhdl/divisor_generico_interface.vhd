@@ -22,20 +22,44 @@ architecture interface of divisor_generico_interface is
   signal sinalUmSegundo : std_logic;
   signal saidaclk_reg1seg : std_logic;
 
+  signal divisor : natural := 50000000;
+  signal contador : integer range 0 to divisor+1 := 0;
+
 begin
 
-baseTempo: entity work.divisor_generico
-           generic map (divisor => 5)   -- divide por 10.
-           port map (clk => clk, saida_clk => saidaclk_reg1seg);
+    process(clk)
+    begin
+        if rising_edge(clk) then
+			if(limpaLeitura = '1') then
+				sinalUmSegundo <= '0';
+                contador <= 0;			
+                
+            elsif contador >= divisor then
+                sinalUmSegundo <= '1';
+                    
+            else
+                contador <= contador + 1;
+                sinalUmSegundo <= '0';
 
-registraUmSegundo: entity work.flip_flop_generico
-   port map (
-        DIN => '1',
-        DOUT => sinalUmSegundo,
-        ENABLE => '1',
-        CLK => saidaclk_reg1seg,
-        RST => limpaLeitura
-    );
+    			
+		end if;
+    end if;
+    end process;
+
+
+
+-- baseTempo: entity work.divisor_generico
+--            generic map (divisor => 50000000)   -- divide por 10.
+--            port map (clk => clk, saida_clk => saidaclk_reg1seg);
+
+-- registraUmSegundo: entity work.flip_flop_generico
+--    port map (
+--         DIN => '1',
+--         DOUT => sinalUmSegundo,
+--         ENABLE => '1',
+--         CLK => saidaclk_reg1seg,
+--         RST => limpaLeitura
+--     );
 
 -- Faz o tristate de saida:
 leituraUmSegundo <= ("0000000" & sinalUmSegundo) when habilitaLeitura = '1' else (OTHERS => 'Z');

@@ -241,7 +241,7 @@ BEGIN
         )
         PORT MAP (
             clk                 => clk,
-            habilitaLeitura     => habilitaTemp,
+            habilitaLeitura     => (habilitaTemp or habilitaCLRTemp),
             limpaLeitura        => habilitaCLRTemp,
             leituraUmSegundo    => barramentoEntradaDados
         );

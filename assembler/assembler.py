@@ -62,11 +62,15 @@ with open(file_name, 'r') as f:
             RC = regs[args[3]]
 
         elif opcode == opcodes["LEA"] or opcode == opcodes["MOVRM"]:
+            RA = regs[args[1]]
+            RB = regs[args[1]]
             RC = regs[args[1]]
             value = bin(int(args[2]))[2:]
             endereco_bin = endereco_bin[:(len(endereco_bin) - len(value))] + value
 
         elif opcode == opcodes["MOVMR"]:
+            RA = regs[args[2]]
+            RB = regs[args[2]]
             RC = regs[args[2]]
             endereco_int = bin(int(args[1]))[2:]
             endereco_bin = endereco_bin[:(len(endereco_bin) - len(endereco_int))] + endereco_int
