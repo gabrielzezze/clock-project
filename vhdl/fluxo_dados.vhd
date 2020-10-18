@@ -232,7 +232,8 @@ BEGIN
             HEX5 => HEX5,
             endereco    => enderecoRAM,
             habilita    => habilitaHex,
-            valor       => saidaRegA  
+            valor       => saidaRegA,
+				clk         => clk
         );
 
     temporizador: ENTITY work.divisor_generico_interface
@@ -243,7 +244,8 @@ BEGIN
             clk                 => clk,
             habilitaLeitura     => (habilitaTemp or habilitaCLRTemp),
             limpaLeitura        => habilitaCLRTemp,
-            leituraUmSegundo    => barramentoEntradaDados
+            leituraUmSegundo    => barramentoEntradaDados,
+				SW                  => SW(0)
         );
 
     opCode          <= opCodeLocal;

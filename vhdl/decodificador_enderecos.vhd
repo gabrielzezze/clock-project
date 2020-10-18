@@ -28,16 +28,16 @@ BEGIN
     habilita(1) <= '1' WHEN (num_endereco >= 5 AND num_endereco <= 7 AND opcode = "0101") ELSE '0';
 
     -- Ler Temp 
-    habilita(2) <= '1' WHEN num_endereco = 8 ELSE'0';
+    habilita(2) <= '1' WHEN (num_endereco = 8 AND opcode = "0100") ELSE'0';
 
     -- Botao
-    habilita(3) <= '1' WHEN num_endereco >= 1 AND num_endereco < 5 ELSE '0';
+    habilita(3) <= '1' WHEN (num_endereco >= 1 AND num_endereco < 5 AND opcode = "0100") ELSE '0';
 
     -- Switch
-    habilita(4) <= '1' WHEN num_endereco = 0 ELSE '0';
+    habilita(4) <= '1' WHEN (num_endereco = 0 AND opcode = "0100") ELSE '0';
 
     -- Clear Temp
-    habilita(5) <= '1' WHEN num_endereco = 9 ELSE '0';
+    habilita(5) <= '1' WHEN (num_endereco = 9 AND opcode = "0101") ELSE '0';
     
 END ARCHITECTURE;
 

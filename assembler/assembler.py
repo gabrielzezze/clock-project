@@ -43,6 +43,7 @@ with open(file_name, 'r') as f:
         opcode = opcodes.get(args[0], False)
         if not opcode:
             labels[args[0]] = line_number
+            continue
         line_number += 1
 
     print('LABELS:', labels)

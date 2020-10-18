@@ -7,7 +7,8 @@ entity divisor_generico is
 generic (divisor : natural := 8);
     port(
       clk      :   in std_logic;
-      saida_clk :   out std_logic);
+      saida_clk :   out std_logic;
+		SW        :   in std_logic);
 
 end entity;
 
@@ -18,13 +19,16 @@ architecture div_inteiro of divisor_generico is
 
     signal tick : std_logic := '0';
     signal contador : integer range 0 to divisor+1 := 0;
+	 signal divisor_inter : natural := divisor;
 
 begin
+
+	 divisor_inter <= divisor WHEN SW = '0' ELSE 250000;
 
     process(clk)
     begin
         if rising_edge(clk) then
-            if contador = divisor then
+            if contador = divisor_inter then
                 contador <= 0;
                 tick <= not tick;
             else

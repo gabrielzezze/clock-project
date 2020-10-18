@@ -1,5 +1,5 @@
 Analysis & Synthesis report for main
-Sat Oct 17 17:35:36 2020
+Sun Oct 18 17:47:44 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -32,20 +32,34 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  24. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|memoria_ram:RAM
  25. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|interface_buttons:interface_buttons
  26. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|interface_hex:interface_hex
- 27. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador
- 28. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex5"
- 29. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex4"
- 30. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex3"
- 31. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex2"
- 32. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex1"
- 33. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0"
- 34. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|flip_flop_generico:flip_flop_flag_zero"
- 35. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|registrador_generico:PC"
- 36. Port Connectivity Checks: "processador:processador|fluxo_dados:FD"
- 37. Port Connectivity Checks: "processador:processador"
- 38. Post-Synthesis Netlist Statistics for Top Partition
- 39. Elapsed Time Per Partition
- 40. Analysis & Synthesis Messages
+ 27. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex0
+ 28. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex1
+ 29. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex2
+ 30. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex3
+ 31. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex4
+ 32. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex5
+ 33. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador
+ 34. Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|divisor_generico:baseTempo
+ 35. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|flip_flop_generico:registraUmSegundo"
+ 36. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex5"
+ 37. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex4"
+ 38. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex3"
+ 39. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex2"
+ 40. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex1"
+ 41. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex0"
+ 42. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex5"
+ 43. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex4"
+ 44. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex3"
+ 45. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex2"
+ 46. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex1"
+ 47. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0"
+ 48. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|flip_flop_generico:flip_flop_flag_zero"
+ 49. Port Connectivity Checks: "processador:processador|fluxo_dados:FD|registrador_generico:PC"
+ 50. Port Connectivity Checks: "processador:processador|fluxo_dados:FD"
+ 51. Port Connectivity Checks: "processador:processador"
+ 52. Post-Synthesis Netlist Statistics for Top Partition
+ 53. Elapsed Time Per Partition
+ 54. Analysis & Synthesis Messages
 
 
 
@@ -72,13 +86,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Oct 17 17:35:36 2020       ;
+; Analysis & Synthesis Status     ; Successful - Sun Oct 18 17:47:44 2020       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; main                                        ;
 ; Top-level Entity Name           ; main                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 69                                          ;
+; Total registers                 ; 655                                         ;
 ; Total pins                      ; 68                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -184,43 +198,49 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 6           ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 6           ;
+; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processors 3-6         ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                        ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                 ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------+---------+
-; flip_flop_generico.vhd           ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/flip_flop_generico.vhd         ;         ;
-; divisor_generico_interface.vhd   ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/divisor_generico_interface.vhd ;         ;
-; interface_hex.vhd                ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_hex.vhd              ;         ;
-; conversor_hex_7_segmentos.vhd    ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/conversor_hex_7_segmentos.vhd  ;         ;
-; interface_buttons.vhd            ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_buttons.vhd          ;         ;
-; interface_switches.vhd           ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_switches.vhd         ;         ;
-; memoria_ram.vhd                  ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/memoria_ram.vhd                ;         ;
-; decodificador_enderecos.vhd      ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/decodificador_enderecos.vhd    ;         ;
-; ula.vhd                          ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/ula.vhd                        ;         ;
-; banco_registradores.vhd          ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/banco_registradores.vhd        ;         ;
-; mux_generico_2x1.vhd             ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/mux_generico_2x1.vhd           ;         ;
-; soma_constante.vhd               ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/soma_constante.vhd             ;         ;
-; registrador_generico.vhd         ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/registrador_generico.vhd       ;         ;
-; memoria_rom.vhd                  ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/memoria_rom.vhd                ;         ;
-; fluxo_dados.vhd                  ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd                ;         ;
-; main.vhd                         ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd                       ;         ;
-; unidade_controle.vhd             ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/unidade_controle.vhd           ;         ;
-; processador.vhd                  ; yes             ; User VHDL File  ; /home/gabrielzezze/Desktop/projeto_clock/vhdl/processador.vhd                ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                    ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                             ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
+; flip_flop_generico.vhd           ; yes             ; User VHDL File  ; C:/Users/pedro/Desktop/clock_project/vhdl/flip_flop_generico.vhd         ;         ;
+; divisor_generico_interface.vhd   ; yes             ; User VHDL File  ; C:/Users/pedro/Desktop/clock_project/vhdl/divisor_generico_interface.vhd ;         ;
+; divisor_generico.vhd             ; yes             ; User VHDL File  ; C:/Users/pedro/Desktop/clock_project/vhdl/divisor_generico.vhd           ;         ;
+; interface_hex.vhd                ; yes             ; User VHDL File  ; C:/Users/pedro/Desktop/clock_project/vhdl/interface_hex.vhd              ;         ;
+; conversor_hex_7_segmentos.vhd    ; yes             ; User VHDL File  ; C:/Users/pedro/Desktop/clock_project/vhdl/conversor_hex_7_segmentos.vhd  ;         ;
+; interface_buttons.vhd            ; yes             ; User VHDL File  ; C:/Users/pedro/Desktop/clock_project/vhdl/interface_buttons.vhd          ;         ;
+; interface_switches.vhd           ; yes             ; User VHDL File  ; C:/Users/pedro/Desktop/clock_project/vhdl/interface_switches.vhd         ;         ;
+; memoria_ram.vhd                  ; yes             ; User VHDL File  ; C:/Users/pedro/Desktop/clock_project/vhdl/memoria_ram.vhd                ;         ;
+; decodificador_enderecos.vhd      ; yes             ; User VHDL File  ; C:/Users/pedro/Desktop/clock_project/vhdl/decodificador_enderecos.vhd    ;         ;
+; ula.vhd                          ; yes             ; User VHDL File  ; C:/Users/pedro/Desktop/clock_project/vhdl/ula.vhd                        ;         ;
+; banco_registradores.vhd          ; yes             ; User VHDL File  ; C:/Users/pedro/Desktop/clock_project/vhdl/banco_registradores.vhd        ;         ;
+; mux_generico_2x1.vhd             ; yes             ; User VHDL File  ; C:/Users/pedro/Desktop/clock_project/vhdl/mux_generico_2x1.vhd           ;         ;
+; soma_constante.vhd               ; yes             ; User VHDL File  ; C:/Users/pedro/Desktop/clock_project/vhdl/soma_constante.vhd             ;         ;
+; registrador_generico.vhd         ; yes             ; User VHDL File  ; C:/Users/pedro/Desktop/clock_project/vhdl/registrador_generico.vhd       ;         ;
+; memoria_rom.vhd                  ; yes             ; User VHDL File  ; C:/Users/pedro/Desktop/clock_project/vhdl/memoria_rom.vhd                ;         ;
+; fluxo_dados.vhd                  ; yes             ; User VHDL File  ; C:/Users/pedro/Desktop/clock_project/vhdl/fluxo_dados.vhd                ;         ;
+; main.vhd                         ; yes             ; User VHDL File  ; C:/Users/pedro/Desktop/clock_project/vhdl/main.vhd                       ;         ;
+; unidade_controle.vhd             ; yes             ; User VHDL File  ; C:/Users/pedro/Desktop/clock_project/vhdl/unidade_controle.vhd           ;         ;
+; processador.vhd                  ; yes             ; User VHDL File  ; C:/Users/pedro/Desktop/clock_project/vhdl/processador.vhd                ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -228,93 +248,581 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 82             ;
+; Estimate of Logic utilization (ALMs needed) ; 585            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 139            ;
-;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 21             ;
-;     -- 5 input functions                    ; 13             ;
-;     -- 4 input functions                    ; 34             ;
-;     -- <=3 input functions                  ; 71             ;
+; Combinational ALUT usage for logic          ; 507            ;
+;     -- 7 input functions                    ; 160            ;
+;     -- 6 input functions                    ; 139            ;
+;     -- 5 input functions                    ; 31             ;
+;     -- 4 input functions                    ; 37             ;
+;     -- <=3 input functions                  ; 140            ;
 ;                                             ;                ;
-; Dedicated logic registers                   ; 69             ;
+; Dedicated logic registers                   ; 655            ;
 ;                                             ;                ;
 ; I/O pins                                    ; 68             ;
 ;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 69             ;
-; Total fan-out                               ; 865            ;
-; Average fan-out                             ; 2.51           ;
+; Maximum fan-out                             ; 654            ;
+; Total fan-out                               ; 4649           ;
+; Average fan-out                             ; 3.58           ;
 +---------------------------------------------+----------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                       ;
-+------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------+----------------------------+--------------+
-; Compilation Hierarchy Node                                 ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                     ; Entity Name                ; Library Name ;
-+------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------+----------------------------+--------------+
-; |main                                                      ; 139 (1)             ; 69 (0)                    ; 0                 ; 0          ; 68   ; 0            ; |main                                                                                                   ; main                       ; work         ;
-;    |processador:processador|                               ; 138 (0)             ; 69 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador                                                                           ; processador                ; work         ;
-;       |fluxo_dados:FD|                                     ; 134 (0)             ; 69 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD                                                            ; fluxo_dados                ; work         ;
-;          |ULA:ula|                                         ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|ULA:ula                                                    ; ULA                        ; work         ;
-;          |banco_registradores:banco_registradores|         ; 20 (20)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores                    ; banco_registradores        ; work         ;
-;          |decodificador_enderecos:decodificador_enderecos| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|decodificador_enderecos:decodificador_enderecos            ; decodificador_enderecos    ; work         ;
-;          |divisor_generico_interface:temporizador|         ; 31 (31)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador                    ; divisor_generico_interface ; work         ;
-;          |flip_flop_generico:flip_flop_flag_zero|          ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|flip_flop_generico:flip_flop_flag_zero                     ; flip_flop_generico         ; work         ;
-;          |interface_hex:interface_hex|                     ; 16 (2)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex                                ; interface_hex              ; work         ;
-;             |conversorHex7Seg:conversorHex0|               ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0 ; conversorHex7Seg           ; work         ;
-;             |conversorHex7Seg:conversorHex1|               ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex1 ; conversorHex7Seg           ; work         ;
-;          |memoria_rom:ROM|                                 ; 23 (23)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|memoria_rom:ROM                                            ; memoria_rom                ; work         ;
-;          |mux_generico_2x1:mux_RAM_imediato|               ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_RAM_imediato                          ; mux_generico_2x1           ; work         ;
-;          |mux_generico_2x1:mux_ULA_imediato_ou_ram|        ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_ULA_imediato_ou_ram                   ; mux_generico_2x1           ; work         ;
-;          |registrador_generico:PC|                         ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|registrador_generico:PC                                    ; registrador_generico       ; work         ;
-;          |soma_constante:somaUm|                           ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|soma_constante:somaUm                                      ; soma_constante             ; work         ;
-;       |unidade_controle:UC|                                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|unidade_controle:UC                                                       ; unidade_controle           ; work         ;
-+------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------+----------------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                         ;
++------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------+----------------------------+--------------+
+; Compilation Hierarchy Node                                 ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                       ; Entity Name                ; Library Name ;
++------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------+----------------------------+--------------+
+; |main                                                      ; 507 (1)             ; 655 (0)                   ; 0                 ; 0          ; 68   ; 0            ; |main                                                                                                                     ; main                       ; work         ;
+;    |processador:processador|                               ; 506 (0)             ; 655 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador                                                                                             ; processador                ; work         ;
+;       |fluxo_dados:FD|                                     ; 501 (0)             ; 655 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD                                                                              ; fluxo_dados                ; work         ;
+;          |ULA:ula|                                         ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|ULA:ula                                                                      ; ULA                        ; work         ;
+;          |banco_registradores:banco_registradores|         ; 42 (42)             ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores                                      ; banco_registradores        ; work         ;
+;          |decodificador_enderecos:decodificador_enderecos| ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|decodificador_enderecos:decodificador_enderecos                              ; decodificador_enderecos    ; work         ;
+;          |divisor_generico_interface:temporizador|         ; 32 (0)              ; 27 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador                                      ; divisor_generico_interface ; work         ;
+;             |divisor_generico:baseTempo|                   ; 32 (32)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|divisor_generico:baseTempo           ; divisor_generico           ; work         ;
+;             |flip_flop_generico:registraUmSegundo|         ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|flip_flop_generico:registraUmSegundo ; flip_flop_generico         ; work         ;
+;          |flip_flop_generico:flip_flop_flag_zero|          ; 6 (6)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|flip_flop_generico:flip_flop_flag_zero                                       ; flip_flop_generico         ; work         ;
+;          |interface_hex:interface_hex|                     ; 18 (4)              ; 42 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex                                                  ; interface_hex              ; work         ;
+;             |conversorHex7Seg:conversorHex0|               ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0                   ; conversorHex7Seg           ; work         ;
+;             |conversorHex7Seg:conversorHex1|               ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex1                   ; conversorHex7Seg           ; work         ;
+;             |registrador_generico:registrador_hex0|        ; 0 (0)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex0            ; registrador_generico       ; work         ;
+;             |registrador_generico:registrador_hex1|        ; 0 (0)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex1            ; registrador_generico       ; work         ;
+;             |registrador_generico:registrador_hex2|        ; 0 (0)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex2            ; registrador_generico       ; work         ;
+;             |registrador_generico:registrador_hex3|        ; 0 (0)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex3            ; registrador_generico       ; work         ;
+;             |registrador_generico:registrador_hex4|        ; 0 (0)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex4            ; registrador_generico       ; work         ;
+;             |registrador_generico:registrador_hex5|        ; 0 (0)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex5            ; registrador_generico       ; work         ;
+;          |memoria_ram:RAM|                                 ; 274 (274)           ; 512 (512)                 ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|memoria_ram:RAM                                                              ; memoria_ram                ; work         ;
+;          |memoria_rom:ROM|                                 ; 67 (67)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|memoria_rom:ROM                                                              ; memoria_rom                ; work         ;
+;          |mux_generico_2x1:mux_ULA_imediato_ou_ram|        ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_ULA_imediato_ou_ram                                     ; mux_generico_2x1           ; work         ;
+;          |registrador_generico:PC|                         ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|registrador_generico:PC                                                      ; registrador_generico       ; work         ;
+;          |soma_constante:somaUm|                           ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|fluxo_dados:FD|soma_constante:somaUm                                                        ; soma_constante             ; work         ;
+;       |unidade_controle:UC|                                ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |main|processador:processador|unidade_controle:UC                                                                         ; unidade_controle           ; work         ;
++------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------+----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                 ;
-+-----------------------------------------------------------------------------------------------+--------------------+
-; Register name                                                                                 ; Reason for Removal ;
-+-----------------------------------------------------------------------------------------------+--------------------+
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~44 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~45 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~46 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~47 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~48 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~49 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~50 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~51 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~52 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~53 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~54 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~55 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~56 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~57 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~58 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~59 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~60 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~61 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~62 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~63 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~64 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~65 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~66 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~67 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~68 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~69 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~70 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~71 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~72 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~73 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~74 ; Lost fanout        ;
-; processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador~75 ; Lost fanout        ;
-; Total Number of Removed Registers = 32                                                        ;                    ;
-+-----------------------------------------------------------------------------------------------+--------------------+
++--------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                           ;
++----------------------------------------------------------------+---------------------------------------------+
+; Register name                                                  ; Reason for Removal                          ;
++----------------------------------------------------------------+---------------------------------------------+
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~59  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~75  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~51  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~67  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~315 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~331 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~307 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~323 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~187 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~203 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~179 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~195 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~443 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~459 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~435 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~451 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~123 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~139 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~115 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~131 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~379 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~395 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~371 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~387 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~251 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~267 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~243 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~259 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~507 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~523 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~499 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~515 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~60  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~76  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~52  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~68  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~124 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~140 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~116 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~132 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~188 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~204 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~180 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~196 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~252 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~268 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~244 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~260 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~316 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~332 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~308 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~324 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~380 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~396 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~372 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~388 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~444 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~460 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~436 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~452 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~508 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~524 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~500 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~516 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~58  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~74  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~50  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~66  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~314 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~330 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~306 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~322 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~122 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~138 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~114 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~130 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~378 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~394 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~370 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~386 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~186 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~202 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~178 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~194 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~442 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~458 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~434 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~450 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~250 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~266 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~242 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~258 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~506 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~522 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~498 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~514 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~61  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~77  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~53  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~69  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~317 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~333 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~309 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~325 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~189 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~205 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~181 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~197 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~445 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~461 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~437 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~453 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~125 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~141 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~117 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~133 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~381 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~397 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~373 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~389 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~253 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~269 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~245 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~261 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~509 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~525 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~501 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~517 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~63  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~79  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~55  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~71  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~127 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~143 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~119 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~135 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~191 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~207 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~183 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~199 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~255 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~271 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~247 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~263 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~319 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~335 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~311 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~327 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~383 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~399 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~375 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~391 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~447 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~463 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~439 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~455 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~511 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~527 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~503 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~519 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~64  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~80  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~56  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~72  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~320 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~336 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~312 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~328 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~128 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~144 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~120 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~136 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~384 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~400 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~376 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~392 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~192 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~208 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~184 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~200 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~448 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~464 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~440 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~456 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~256 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~272 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~248 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~264 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~512 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~528 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~504 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~520 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~62  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~78  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~54  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~70  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~318 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~334 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~310 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~326 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~190 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~206 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~182 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~198 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~446 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~462 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~438 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~454 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~126 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~142 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~118 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~134 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~382 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~398 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~374 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~390 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~254 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~270 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~246 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~262 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~510 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~526 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~502 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~518 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~65  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~81  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~57  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~73  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~129 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~145 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~121 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~137 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~193 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~209 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~185 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~201 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~257 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~273 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~249 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~265 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~321 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~337 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~313 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~329 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~385 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~401 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~377 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~393 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~449 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~465 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~441 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~457 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~513 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~529 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~505 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~521 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~27  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~43  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~19  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~35  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~283 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~299 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~275 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~291 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~155 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~171 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~147 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~163 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~411 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~427 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~403 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~419 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~91  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~107 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~83  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~99  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~347 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~363 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~339 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~355 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~219 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~235 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~211 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~227 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~475 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~491 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~467 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~483 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~28  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~44  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~20  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~36  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~92  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~108 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~84  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~100 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~156 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~172 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~148 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~164 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~220 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~236 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~212 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~228 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~284 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~300 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~276 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~292 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~348 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~364 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~340 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~356 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~412 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~428 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~404 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~420 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~476 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~492 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~468 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~484 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~26  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~42  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~18  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~34  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~282 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~298 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~274 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~290 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~90  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~106 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~82  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~98  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~346 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~362 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~338 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~354 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~154 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~170 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~146 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~162 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~410 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~426 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~402 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~418 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~218 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~234 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~210 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~226 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~474 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~490 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~466 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~482 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~29  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~45  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~21  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~37  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~285 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~301 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~277 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~293 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~157 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~173 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~149 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~165 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~413 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~429 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~405 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~421 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~93  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~109 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~85  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~101 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~349 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~365 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~341 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~357 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~221 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~237 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~213 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~229 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~477 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~493 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~469 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~485 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~31  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~47  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~23  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~39  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~95  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~111 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~87  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~103 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~159 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~175 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~151 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~167 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~223 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~239 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~215 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~231 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~287 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~303 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~279 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~295 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~351 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~367 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~343 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~359 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~415 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~431 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~407 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~423 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~479 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~495 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~471 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~487 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~32  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~48  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~24  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~40  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~288 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~304 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~280 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~296 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~96  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~112 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~88  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~104 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~352 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~368 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~344 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~360 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~160 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~176 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~152 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~168 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~416 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~432 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~408 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~424 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~224 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~240 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~216 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~232 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~480 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~496 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~472 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~488 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~30  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~46  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~22  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~38  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~286 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~302 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~278 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~294 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~158 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~174 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~150 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~166 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~414 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~430 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~406 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~422 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~94  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~110 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~86  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~102 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~350 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~366 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~342 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~358 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~222 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~238 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~214 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~230 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~478 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~494 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~470 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~486 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~33  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~49  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~25  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~41  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~97  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~113 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~89  ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~105 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~161 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~177 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~153 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~169 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~225 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~241 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~217 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~233 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~289 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~305 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~281 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~297 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~353 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~369 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~345 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~361 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~417 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~433 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~409 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~425 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~481 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~497 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~473 ; Stuck at GND due to stuck port clock_enable ;
+; processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram~489 ; Stuck at GND due to stuck port clock_enable ;
+; Total Number of Removed Registers = 512                        ;                                             ;
++----------------------------------------------------------------+---------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -322,12 +830,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 69    ;
-; Number of registers using Synchronous Clear  ; 26    ;
+; Total registers                              ; 655   ;
+; Number of registers using Synchronous Clear  ; 25    ;
 ; Number of registers using Synchronous Load   ; 9     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 1     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 58    ;
+; Number of registers using Clock Enable       ; 618   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -337,14 +845,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 26 bits   ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |main|processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|contador[16]                        ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|ULA:ula|saida[0]                                                            ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_ULA_imediato_ou_ram|saida_MUX[6]                       ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_ULA_imediato_ou_ram|saida_MUX[1]                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|ULA:ula|saida[7]                                                            ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_ULA_imediato_ou_ram|saida_MUX[6]                       ;
 ; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0|rascSaida7seg[1] ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex1|rascSaida7seg[0] ;
-; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0|rascSaida7seg[4] ;
-; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex1|rascSaida7seg[4] ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |main|processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex1|rascSaida7seg[5] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -523,6 +1027,66 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex0 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                         ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------+
+; larguradados   ; 7     ; Signed Integer                                                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex1 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                         ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------+
+; larguradados   ; 7     ; Signed Integer                                                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex2 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                         ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------+
+; larguradados   ; 7     ; Signed Integer                                                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex3 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                         ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------+
+; larguradados   ; 7     ; Signed Integer                                                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex4 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                         ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------+
+; larguradados   ; 7     ; Signed Integer                                                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex5 ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                                         ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------+
+; larguradados   ; 7     ; Signed Integer                                                                                                               ;
++----------------+-------+------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador ;
 +----------------+-------+----------------------------------------------------------------------------------------------------+
@@ -531,6 +1095,80 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; data_width     ; 8     ; Signed Integer                                                                                     ;
 +----------------+-------+----------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|divisor_generico:baseTempo ;
++----------------+----------+----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                                                                                       ;
++----------------+----------+----------------------------------------------------------------------------------------------------------------------------+
+; divisor        ; 25000000 ; Signed Integer                                                                                                             ;
++----------------+----------+----------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|flip_flop_generico:registraUmSegundo" ;
++--------+-------+----------+---------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                             ;
++--------+-------+----------+---------------------------------------------------------------------------------------------------------------------+
+; din    ; Input ; Info     ; Stuck at VCC                                                                                                        ;
+; enable ; Input ; Info     ; Stuck at VCC                                                                                                        ;
++--------+-------+----------+---------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex5" ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                    ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                                                                               ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex4" ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                    ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                                                                               ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex3" ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                    ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                                                                               ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex2" ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                    ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                                                                               ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex1" ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                    ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                                                                               ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex0" ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                    ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------+
+; rst  ; Input ; Info     ; Stuck at GND                                                                                               ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -643,27 +1281,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 69                          ;
-;     ENA               ; 32                          ;
-;     ENA SCLR          ; 26                          ;
+; arriav_ff             ; 655                         ;
+;     CLR               ; 1                           ;
+;     ENA               ; 618                         ;
+;     SCLR              ; 25                          ;
 ;     SLD               ; 9                           ;
 ;     plain             ; 2                           ;
-; arriav_io_obuf        ; 42                          ;
-; arriav_lcell_comb     ; 139                         ;
-;     arith             ; 44                          ;
-;         1 data inputs ; 36                          ;
-;         3 data inputs ; 8                           ;
-;     normal            ; 95                          ;
+; arriav_lcell_comb     ; 507                         ;
+;     arith             ; 43                          ;
+;         1 data inputs ; 34                          ;
+;         2 data inputs ; 1                           ;
+;         4 data inputs ; 8                           ;
+;     extend            ; 160                         ;
+;         7 data inputs ; 160                         ;
+;     normal            ; 304                         ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 19                          ;
-;         3 data inputs ; 7                           ;
-;         4 data inputs ; 34                          ;
-;         5 data inputs ; 13                          ;
-;         6 data inputs ; 21                          ;
+;         2 data inputs ; 77                          ;
+;         3 data inputs ; 27                          ;
+;         4 data inputs ; 29                          ;
+;         5 data inputs ; 31                          ;
+;         6 data inputs ; 139                         ;
 ; boundary_port         ; 68                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.70                        ;
-; Average LUT depth     ; 3.49                        ;
+; Max LUT depth         ; 9.00                        ;
+; Average LUT depth     ; 5.23                        ;
 +-----------------------+-----------------------------+
 
 
@@ -682,138 +1323,134 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Oct 17 17:35:21 2020
+    Info: Processing started: Sun Oct 18 17:47:35 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto_clock -c main
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file flip_flop_generico.vhd
-    Info (12022): Found design unit 1: flip_flop_generico-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/flip_flop_generico.vhd Line: 12
-    Info (12023): Found entity 1: flip_flop_generico File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/flip_flop_generico.vhd Line: 4
+    Info (12022): Found design unit 1: flip_flop_generico-comportamento File: C:/Users/pedro/Desktop/clock_project/vhdl/flip_flop_generico.vhd Line: 12
+    Info (12023): Found entity 1: flip_flop_generico File: C:/Users/pedro/Desktop/clock_project/vhdl/flip_flop_generico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file divisor_generico_interface.vhd
-    Info (12022): Found design unit 1: divisor_generico_interface-interface File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/divisor_generico_interface.vhd Line: 20
-    Info (12023): Found entity 1: divisor_generico_interface File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/divisor_generico_interface.vhd Line: 5
+    Info (12022): Found design unit 1: divisor_generico_interface-interface File: C:/Users/pedro/Desktop/clock_project/vhdl/divisor_generico_interface.vhd Line: 21
+    Info (12023): Found entity 1: divisor_generico_interface File: C:/Users/pedro/Desktop/clock_project/vhdl/divisor_generico_interface.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file divisor_generico.vhd
-    Info (12022): Found design unit 1: divisor_generico-div_inteiro File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/divisor_generico.vhd Line: 17
-    Info (12023): Found entity 1: divisor_generico File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/divisor_generico.vhd Line: 5
+    Info (12022): Found design unit 1: divisor_generico-div_inteiro File: C:/Users/pedro/Desktop/clock_project/vhdl/divisor_generico.vhd Line: 18
+    Info (12023): Found entity 1: divisor_generico File: C:/Users/pedro/Desktop/clock_project/vhdl/divisor_generico.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file interface_hex.vhd
-    Info (12022): Found design unit 1: interface_hex-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_hex.vhd Line: 18
-    Info (12023): Found entity 1: interface_hex File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_hex.vhd Line: 5
+    Info (12022): Found design unit 1: interface_hex-comportamento File: C:/Users/pedro/Desktop/clock_project/vhdl/interface_hex.vhd Line: 19
+    Info (12023): Found entity 1: interface_hex File: C:/Users/pedro/Desktop/clock_project/vhdl/interface_hex.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file conversor_hex_7_segmentos.vhd
-    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/conversor_hex_7_segmentos.vhd Line: 17
-    Info (12023): Found entity 1: conversorHex7Seg File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/conversor_hex_7_segmentos.vhd Line: 4
+    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Users/pedro/Desktop/clock_project/vhdl/conversor_hex_7_segmentos.vhd Line: 17
+    Info (12023): Found entity 1: conversorHex7Seg File: C:/Users/pedro/Desktop/clock_project/vhdl/conversor_hex_7_segmentos.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file interface_buttons.vhd
-    Info (12022): Found design unit 1: interface_buttons-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_buttons.vhd Line: 17
-    Info (12023): Found entity 1: interface_buttons File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_buttons.vhd Line: 5
+    Info (12022): Found design unit 1: interface_buttons-comportamento File: C:/Users/pedro/Desktop/clock_project/vhdl/interface_buttons.vhd Line: 17
+    Info (12023): Found entity 1: interface_buttons File: C:/Users/pedro/Desktop/clock_project/vhdl/interface_buttons.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file interface_switches.vhd
-    Info (12022): Found design unit 1: interface_switches-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_switches.vhd Line: 13
-    Info (12023): Found entity 1: interface_switches File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_switches.vhd Line: 5
+    Info (12022): Found design unit 1: interface_switches-comportamento File: C:/Users/pedro/Desktop/clock_project/vhdl/interface_switches.vhd Line: 13
+    Info (12023): Found entity 1: interface_switches File: C:/Users/pedro/Desktop/clock_project/vhdl/interface_switches.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file memoria_ram.vhd
-    Info (12022): Found design unit 1: memoria_ram-rtl File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/memoria_ram.vhd Line: 23
-    Info (12023): Found entity 1: memoria_ram File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/memoria_ram.vhd Line: 5
+    Info (12022): Found design unit 1: memoria_ram-rtl File: C:/Users/pedro/Desktop/clock_project/vhdl/memoria_ram.vhd Line: 23
+    Info (12023): Found entity 1: memoria_ram File: C:/Users/pedro/Desktop/clock_project/vhdl/memoria_ram.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file decodificador_enderecos.vhd
-    Info (12022): Found design unit 1: decodificador_enderecos-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/decodificador_enderecos.vhd Line: 16
-    Info (12023): Found entity 1: decodificador_enderecos File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/decodificador_enderecos.vhd Line: 5
+    Info (12022): Found design unit 1: decodificador_enderecos-comportamento File: C:/Users/pedro/Desktop/clock_project/vhdl/decodificador_enderecos.vhd Line: 16
+    Info (12023): Found entity 1: decodificador_enderecos File: C:/Users/pedro/Desktop/clock_project/vhdl/decodificador_enderecos.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
-    Info (12022): Found design unit 1: ULA-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/ula.vhd Line: 17
-    Info (12023): Found entity 1: ULA File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/ula.vhd Line: 5
+    Info (12022): Found design unit 1: ULA-comportamento File: C:/Users/pedro/Desktop/clock_project/vhdl/ula.vhd Line: 17
+    Info (12023): Found entity 1: ULA File: C:/Users/pedro/Desktop/clock_project/vhdl/ula.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file banco_registradores.vhd
-    Info (12022): Found design unit 1: banco_registradores-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/banco_registradores.vhd Line: 28
-    Info (12023): Found entity 1: banco_registradores File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/banco_registradores.vhd Line: 5
+    Info (12022): Found design unit 1: banco_registradores-comportamento File: C:/Users/pedro/Desktop/clock_project/vhdl/banco_registradores.vhd Line: 28
+    Info (12023): Found entity 1: banco_registradores File: C:/Users/pedro/Desktop/clock_project/vhdl/banco_registradores.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mux_generico_2x1.vhd
-    Info (12022): Found design unit 1: mux_generico_2x1-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/mux_generico_2x1.vhd Line: 15
-    Info (12023): Found entity 1: mux_generico_2x1 File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/mux_generico_2x1.vhd Line: 4
+    Info (12022): Found design unit 1: mux_generico_2x1-comportamento File: C:/Users/pedro/Desktop/clock_project/vhdl/mux_generico_2x1.vhd Line: 15
+    Info (12023): Found entity 1: mux_generico_2x1 File: C:/Users/pedro/Desktop/clock_project/vhdl/mux_generico_2x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file soma_constante.vhd
-    Info (12022): Found design unit 1: soma_constante-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/soma_constante.vhd Line: 18
-    Info (12023): Found entity 1: soma_constante File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/soma_constante.vhd Line: 5
+    Info (12022): Found design unit 1: soma_constante-comportamento File: C:/Users/pedro/Desktop/clock_project/vhdl/soma_constante.vhd Line: 18
+    Info (12023): Found entity 1: soma_constante File: C:/Users/pedro/Desktop/clock_project/vhdl/soma_constante.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file registrador_generico.vhd
-    Info (12022): Found design unit 1: registrador_generico-comportamento File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/registrador_generico.vhd Line: 18
-    Info (12023): Found entity 1: registrador_generico File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/registrador_generico.vhd Line: 4
+    Info (12022): Found design unit 1: registrador_generico-comportamento File: C:/Users/pedro/Desktop/clock_project/vhdl/registrador_generico.vhd Line: 18
+    Info (12023): Found entity 1: registrador_generico File: C:/Users/pedro/Desktop/clock_project/vhdl/registrador_generico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file memoria_rom.vhd
-    Info (12022): Found design unit 1: memoria_rom-assincrona File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/memoria_rom.vhd Line: 18
-    Info (12023): Found entity 1: memoria_rom File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/memoria_rom.vhd Line: 5
+    Info (12022): Found design unit 1: memoria_rom-assincrona File: C:/Users/pedro/Desktop/clock_project/vhdl/memoria_rom.vhd Line: 18
+    Info (12023): Found entity 1: memoria_rom File: C:/Users/pedro/Desktop/clock_project/vhdl/memoria_rom.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file fluxo_dados.vhd
-    Info (12022): Found design unit 1: fluxo_dados-main File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 31
-    Info (12023): Found entity 1: fluxo_dados File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 5
+    Info (12022): Found design unit 1: fluxo_dados-main File: C:/Users/pedro/Desktop/clock_project/vhdl/fluxo_dados.vhd Line: 31
+    Info (12023): Found entity 1: fluxo_dados File: C:/Users/pedro/Desktop/clock_project/vhdl/fluxo_dados.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file main.vhd
-    Info (12022): Found design unit 1: main-main File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 25
-    Info (12023): Found entity 1: main File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 4
+    Info (12022): Found design unit 1: main-main File: C:/Users/pedro/Desktop/clock_project/vhdl/main.vhd Line: 25
+    Info (12023): Found entity 1: main File: C:/Users/pedro/Desktop/clock_project/vhdl/main.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file unidade_controle.vhd
-    Info (12022): Found design unit 1: unidade_controle-main File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/unidade_controle.vhd Line: 26
-    Info (12023): Found entity 1: unidade_controle File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/unidade_controle.vhd Line: 5
+    Info (12022): Found design unit 1: unidade_controle-main File: C:/Users/pedro/Desktop/clock_project/vhdl/unidade_controle.vhd Line: 26
+    Info (12023): Found entity 1: unidade_controle File: C:/Users/pedro/Desktop/clock_project/vhdl/unidade_controle.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file processador.vhd
-    Info (12022): Found design unit 1: processador-main File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/processador.vhd Line: 27
-    Info (12023): Found entity 1: processador File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/processador.vhd Line: 5
+    Info (12022): Found design unit 1: processador-main File: C:/Users/pedro/Desktop/clock_project/vhdl/processador.vhd Line: 27
+    Info (12023): Found entity 1: processador File: C:/Users/pedro/Desktop/clock_project/vhdl/processador.vhd Line: 5
+Info (12021): Found 3 design units, including 1 entities, in source file edgedetector.vhd
+    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/Users/pedro/Desktop/clock_project/vhdl/edgeDetector.vhd Line: 11
+    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/Users/pedro/Desktop/clock_project/vhdl/edgeDetector.vhd Line: 23
+    Info (12023): Found entity 1: edgeDetector File: C:/Users/pedro/Desktop/clock_project/vhdl/edgeDetector.vhd Line: 4
 Info (12127): Elaborating entity "main" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at main.vhd(18): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
-Info (12128): Elaborating entity "processador" for hierarchy "processador:processador" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 28
-Warning (10541): VHDL Signal Declaration warning at processador.vhd(20): used implicit default value for signal "saidaAcumulador" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/processador.vhd Line: 20
-Warning (10541): VHDL Signal Declaration warning at processador.vhd(21): used implicit default value for signal "programCounter" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/processador.vhd Line: 21
-Info (12128): Elaborating entity "unidade_controle" for hierarchy "processador:processador|unidade_controle:UC" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/processador.vhd Line: 37
-Info (12128): Elaborating entity "fluxo_dados" for hierarchy "processador:processador|fluxo_dados:FD" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/processador.vhd Line: 49
-Warning (10541): VHDL Signal Declaration warning at fluxo_dados.vhd(24): used implicit default value for signal "saidaAcumulador" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 24
-Info (12128): Elaborating entity "registrador_generico" for hierarchy "processador:processador|fluxo_dados:FD|registrador_generico:PC" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 75
-Info (12128): Elaborating entity "mux_generico_2x1" for hierarchy "processador:processador|fluxo_dados:FD|mux_generico_2x1:MuxProxPC" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 87
-Info (12128): Elaborating entity "soma_constante" for hierarchy "processador:processador|fluxo_dados:FD|soma_constante:somaUm" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 98
-Info (12128): Elaborating entity "memoria_rom" for hierarchy "processador:processador|fluxo_dados:FD|memoria_rom:ROM" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 108
-Info (12128): Elaborating entity "mux_generico_2x1" for hierarchy "processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_RAM_imediato" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 118
-Info (12128): Elaborating entity "banco_registradores" for hierarchy "processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 129
-Info (12128): Elaborating entity "ULA" for hierarchy "processador:processador|fluxo_dados:FD|ULA:ula" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 146
-Info (12128): Elaborating entity "flip_flop_generico" for hierarchy "processador:processador|fluxo_dados:FD|flip_flop_generico:flip_flop_flag_zero" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 158
-Info (12128): Elaborating entity "decodificador_enderecos" for hierarchy "processador:processador|fluxo_dados:FD|decodificador_enderecos:decodificador_enderecos" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 178
-Info (12128): Elaborating entity "memoria_ram" for hierarchy "processador:processador|fluxo_dados:FD|memoria_ram:RAM" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 188
-Info (12128): Elaborating entity "interface_switches" for hierarchy "processador:processador|fluxo_dados:FD|interface_switches:interface_switches" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 203
-Info (12128): Elaborating entity "interface_buttons" for hierarchy "processador:processador|fluxo_dados:FD|interface_buttons:interface_buttons" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 210
-Info (12128): Elaborating entity "interface_hex" for hierarchy "processador:processador|fluxo_dados:FD|interface_hex:interface_hex" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 221
-Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/interface_hex.vhd Line: 29
-Info (12128): Elaborating entity "divisor_generico_interface" for hierarchy "processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/fluxo_dados.vhd Line: 238
-Warning (10540): VHDL Signal Declaration warning at divisor_generico_interface.vhd(25): used explicit default value for signal "divisor" because signal was never assigned a value File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/divisor_generico_interface.vhd Line: 25
+Warning (10541): VHDL Signal Declaration warning at main.vhd(18): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/pedro/Desktop/clock_project/vhdl/main.vhd Line: 18
+Info (12128): Elaborating entity "processador" for hierarchy "processador:processador" File: C:/Users/pedro/Desktop/clock_project/vhdl/main.vhd Line: 28
+Warning (10541): VHDL Signal Declaration warning at processador.vhd(20): used implicit default value for signal "saidaAcumulador" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/pedro/Desktop/clock_project/vhdl/processador.vhd Line: 20
+Warning (10541): VHDL Signal Declaration warning at processador.vhd(21): used implicit default value for signal "programCounter" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/pedro/Desktop/clock_project/vhdl/processador.vhd Line: 21
+Info (12128): Elaborating entity "unidade_controle" for hierarchy "processador:processador|unidade_controle:UC" File: C:/Users/pedro/Desktop/clock_project/vhdl/processador.vhd Line: 37
+Info (12128): Elaborating entity "fluxo_dados" for hierarchy "processador:processador|fluxo_dados:FD" File: C:/Users/pedro/Desktop/clock_project/vhdl/processador.vhd Line: 49
+Warning (10541): VHDL Signal Declaration warning at fluxo_dados.vhd(24): used implicit default value for signal "saidaAcumulador" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/pedro/Desktop/clock_project/vhdl/fluxo_dados.vhd Line: 24
+Info (12128): Elaborating entity "registrador_generico" for hierarchy "processador:processador|fluxo_dados:FD|registrador_generico:PC" File: C:/Users/pedro/Desktop/clock_project/vhdl/fluxo_dados.vhd Line: 75
+Info (12128): Elaborating entity "mux_generico_2x1" for hierarchy "processador:processador|fluxo_dados:FD|mux_generico_2x1:MuxProxPC" File: C:/Users/pedro/Desktop/clock_project/vhdl/fluxo_dados.vhd Line: 87
+Info (12128): Elaborating entity "soma_constante" for hierarchy "processador:processador|fluxo_dados:FD|soma_constante:somaUm" File: C:/Users/pedro/Desktop/clock_project/vhdl/fluxo_dados.vhd Line: 98
+Info (12128): Elaborating entity "memoria_rom" for hierarchy "processador:processador|fluxo_dados:FD|memoria_rom:ROM" File: C:/Users/pedro/Desktop/clock_project/vhdl/fluxo_dados.vhd Line: 108
+Info (12128): Elaborating entity "mux_generico_2x1" for hierarchy "processador:processador|fluxo_dados:FD|mux_generico_2x1:mux_RAM_imediato" File: C:/Users/pedro/Desktop/clock_project/vhdl/fluxo_dados.vhd Line: 118
+Info (12128): Elaborating entity "banco_registradores" for hierarchy "processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores" File: C:/Users/pedro/Desktop/clock_project/vhdl/fluxo_dados.vhd Line: 129
+Info (12128): Elaborating entity "ULA" for hierarchy "processador:processador|fluxo_dados:FD|ULA:ula" File: C:/Users/pedro/Desktop/clock_project/vhdl/fluxo_dados.vhd Line: 146
+Info (12128): Elaborating entity "flip_flop_generico" for hierarchy "processador:processador|fluxo_dados:FD|flip_flop_generico:flip_flop_flag_zero" File: C:/Users/pedro/Desktop/clock_project/vhdl/fluxo_dados.vhd Line: 158
+Info (12128): Elaborating entity "decodificador_enderecos" for hierarchy "processador:processador|fluxo_dados:FD|decodificador_enderecos:decodificador_enderecos" File: C:/Users/pedro/Desktop/clock_project/vhdl/fluxo_dados.vhd Line: 178
+Info (12128): Elaborating entity "memoria_ram" for hierarchy "processador:processador|fluxo_dados:FD|memoria_ram:RAM" File: C:/Users/pedro/Desktop/clock_project/vhdl/fluxo_dados.vhd Line: 188
+Info (12128): Elaborating entity "interface_switches" for hierarchy "processador:processador|fluxo_dados:FD|interface_switches:interface_switches" File: C:/Users/pedro/Desktop/clock_project/vhdl/fluxo_dados.vhd Line: 203
+Info (12128): Elaborating entity "interface_buttons" for hierarchy "processador:processador|fluxo_dados:FD|interface_buttons:interface_buttons" File: C:/Users/pedro/Desktop/clock_project/vhdl/fluxo_dados.vhd Line: 210
+Info (12128): Elaborating entity "interface_hex" for hierarchy "processador:processador|fluxo_dados:FD|interface_hex:interface_hex" File: C:/Users/pedro/Desktop/clock_project/vhdl/fluxo_dados.vhd Line: 221
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|conversorHex7Seg:conversorHex0" File: C:/Users/pedro/Desktop/clock_project/vhdl/interface_hex.vhd Line: 37
+Info (12128): Elaborating entity "registrador_generico" for hierarchy "processador:processador|fluxo_dados:FD|interface_hex:interface_hex|registrador_generico:registrador_hex0" File: C:/Users/pedro/Desktop/clock_project/vhdl/interface_hex.vhd Line: 97
+Info (12128): Elaborating entity "divisor_generico_interface" for hierarchy "processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador" File: C:/Users/pedro/Desktop/clock_project/vhdl/fluxo_dados.vhd Line: 239
+Info (12128): Elaborating entity "divisor_generico" for hierarchy "processador:processador|fluxo_dados:FD|divisor_generico_interface:temporizador|divisor_generico:baseTempo" File: C:/Users/pedro/Desktop/clock_project/vhdl/divisor_generico_interface.vhd Line: 28
 Info (276014): Found 2 instances of uninferred RAM logic
-    Info (276007): RAM logic "processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram" is uninferred due to asynchronous read logic File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/memoria_ram.vhd Line: 30
-    Info (276007): RAM logic "processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador" is uninferred due to asynchronous read logic File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/banco_registradores.vhd Line: 34
+    Info (276007): RAM logic "processador:processador|fluxo_dados:FD|memoria_ram:RAM|ram" is uninferred due to asynchronous read logic File: C:/Users/pedro/Desktop/clock_project/vhdl/memoria_ram.vhd Line: 30
+    Info (276007): RAM logic "processador:processador|fluxo_dados:FD|banco_registradores:banco_registradores|registrador" is uninferred due to asynchronous read logic File: C:/Users/pedro/Desktop/clock_project/vhdl/banco_registradores.vhd Line: 34
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[7]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/mux_generico_2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[6]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/mux_generico_2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[5]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/mux_generico_2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[4]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/mux_generico_2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[3]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/mux_generico_2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[2]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/mux_generico_2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[1]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/mux_generico_2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[0]" into a selector File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/mux_generico_2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[7]" into a selector File: C:/Users/pedro/Desktop/clock_project/vhdl/mux_generico_2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[6]" into a selector File: C:/Users/pedro/Desktop/clock_project/vhdl/mux_generico_2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[5]" into a selector File: C:/Users/pedro/Desktop/clock_project/vhdl/mux_generico_2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[4]" into a selector File: C:/Users/pedro/Desktop/clock_project/vhdl/mux_generico_2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[3]" into a selector File: C:/Users/pedro/Desktop/clock_project/vhdl/mux_generico_2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[2]" into a selector File: C:/Users/pedro/Desktop/clock_project/vhdl/mux_generico_2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[1]" into a selector File: C:/Users/pedro/Desktop/clock_project/vhdl/mux_generico_2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "processador:processador|fluxo_dados:FD|barramentoEntradaDados[0]" into a selector File: C:/Users/pedro/Desktop/clock_project/vhdl/mux_generico_2x1.vhd Line: 10
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[0]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
-    Warning (13410): Pin "LEDR[1]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/pedro/Desktop/clock_project/vhdl/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/pedro/Desktop/clock_project/vhdl/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/pedro/Desktop/clock_project/vhdl/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/pedro/Desktop/clock_project/vhdl/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/pedro/Desktop/clock_project/vhdl/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/pedro/Desktop/clock_project/vhdl/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/pedro/Desktop/clock_project/vhdl/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/pedro/Desktop/clock_project/vhdl/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/pedro/Desktop/clock_project/vhdl/main.vhd Line: 18
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/pedro/Desktop/clock_project/vhdl/main.vhd Line: 18
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 32 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 11 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[8]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
-    Warning (15610): No output dependent on input pin "SW[9]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
-    Warning (15610): No output dependent on input pin "FPGA_RESET_N" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 15
-    Warning (15610): No output dependent on input pin "SW[1]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
-    Warning (15610): No output dependent on input pin "SW[3]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
-    Warning (15610): No output dependent on input pin "SW[2]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
-    Warning (15610): No output dependent on input pin "SW[0]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
-    Warning (15610): No output dependent on input pin "SW[5]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
-    Warning (15610): No output dependent on input pin "SW[7]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
-    Warning (15610): No output dependent on input pin "SW[6]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
-    Warning (15610): No output dependent on input pin "SW[4]" File: /home/gabrielzezze/Desktop/projeto_clock/vhdl/main.vhd Line: 13
-Info (21057): Implemented 240 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/pedro/Desktop/clock_project/vhdl/main.vhd Line: 13
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/pedro/Desktop/clock_project/vhdl/main.vhd Line: 13
+    Warning (15610): No output dependent on input pin "FPGA_RESET_N" File: C:/Users/pedro/Desktop/clock_project/vhdl/main.vhd Line: 15
+Info (21057): Implemented 1194 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 172 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
-    Info: Peak virtual memory: 557 megabytes
-    Info: Processing ended: Sat Oct 17 17:35:36 2020
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:32
+    Info (21061): Implemented 1126 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
+    Info: Peak virtual memory: 4895 megabytes
+    Info: Processing ended: Sun Oct 18 17:47:44 2020
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:23
 
 
